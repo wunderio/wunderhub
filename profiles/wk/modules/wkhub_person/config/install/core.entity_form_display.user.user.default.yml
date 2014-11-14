@@ -1,0 +1,93 @@
+uuid: 972923ad-8571-4069-9c00-ab8e9bc0f626
+langcode: und
+status: true
+dependencies:
+  entity:
+    - field.field.user.user.field_person_email
+    - field.field.user.user.field_person_image
+    - field.field.user.user.field_person_jobtitle
+    - field.field.user.user.field_person_namefirst
+    - field.field.user.user.field_person_namelast
+    - field.field.user.user.field_person_office
+    - field.field.user.user.field_persongender
+  module:
+    - entity_reference
+    - image
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: -1
+  account:
+    weight: 0
+  language:
+    weight: 1
+  contact:
+    weight: 2
+  timezone:
+    weight: 3
+  field_person_namefirst:
+    type: string_textfield
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_person_namelast:
+    type: string_textfield
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_person_image:
+    type: image_image
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_person_email:
+    type: email_default
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_persongender:
+    type: options_select
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+  field_person_jobtitle:
+    type: entity_reference_autocomplete
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      autocomplete_type: tags
+      placeholder: ''
+    third_party_settings: {  }
+  field_person_office:
+    type: entity_reference_autocomplete
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      autocomplete_type: tags
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_first_name: true
+  field_last_name: true
+  field_email: true
+  field_social_media: true
+  field_place_of_work: true
+third_party_settings: {  }

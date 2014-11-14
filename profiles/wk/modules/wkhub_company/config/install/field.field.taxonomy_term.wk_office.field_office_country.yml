@@ -1,0 +1,27 @@
+uuid: be3938a6-4acb-4a50-ac00-e9ec3bec0345
+langcode: en
+status: true
+dependencies:
+  entity:
+    - field.storage.taxonomy_term.field_office_country
+    - taxonomy.vocabulary.wk_office
+id: taxonomy_term.wk_office.field_office_country
+field_name: field_office_country
+entity_type: taxonomy_term
+bundle: wk_office
+label: Country
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      country: country
+    sort:
+      field: _none
+    auto_create: true
+third_party_settings: {  }
+field_type: entity_reference

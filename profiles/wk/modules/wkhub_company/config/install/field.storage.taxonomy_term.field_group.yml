@@ -1,0 +1,18 @@
+uuid: 1b001728-b085-4352-b040-640e5790ace8
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference
+    - taxonomy
+id: taxonomy_term.field_group
+field_name: field_group
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: entity_reference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }

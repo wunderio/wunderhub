@@ -1,0 +1,16 @@
+uuid: 73678afb-aa4c-42d8-971f-312e852a0438
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_person_email
+field_name: field_person_email
+entity_type: user
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }

@@ -1,0 +1,18 @@
+uuid: def15488-e732-42c1-8e10-166ebf667ca3
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference
+    - user
+id: user.field_person_jobtitle
+field_name: field_person_jobtitle
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: entity_reference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }

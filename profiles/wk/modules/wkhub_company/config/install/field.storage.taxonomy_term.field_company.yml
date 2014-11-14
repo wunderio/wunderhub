@@ -1,0 +1,18 @@
+uuid: 8374de08-092c-4ccf-b90e-1420a2edb094
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference
+    - taxonomy
+id: taxonomy_term.field_company
+field_name: field_company
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: entity_reference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }

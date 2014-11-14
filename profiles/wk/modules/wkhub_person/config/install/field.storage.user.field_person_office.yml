@@ -1,0 +1,18 @@
+uuid: 1ed69e55-f150-4b70-aa45-69af171df8bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference
+    - user
+id: user.field_person_office
+field_name: field_person_office
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: entity_reference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }

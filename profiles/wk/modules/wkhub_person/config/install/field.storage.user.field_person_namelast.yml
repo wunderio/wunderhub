@@ -1,0 +1,17 @@
+uuid: a0f0ae17-af43-491e-9905-5f09c4fe1afe
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_person_namelast
+field_name: field_person_namelast
+entity_type: user
+type: string
+settings:
+  max_length: 255
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }

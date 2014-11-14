@@ -1,0 +1,19 @@
+uuid: 0e07cbf0-496d-4f78-a140-64d0d2efc693
+langcode: en
+status: true
+dependencies:
+  entity:
+    - field.storage.user.field_persongender
+id: user.user.field_persongender
+field_name: field_persongender
+entity_type: user
+bundle: user
+label: Gender
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+third_party_settings: {  }
+field_type: list_string

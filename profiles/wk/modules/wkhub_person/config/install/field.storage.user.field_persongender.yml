@@ -1,0 +1,28 @@
+uuid: 11191068-d216-48b4-b22b-43541ce922b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_persongender
+field_name: field_persongender
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: female
+      label: female
+    -
+      value: male
+      label: male
+    -
+      value: other
+      label: other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }

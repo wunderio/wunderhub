@@ -1,0 +1,39 @@
+uuid: 43af43d4-bef8-4f4d-bd00-0ef25a45ac00
+langcode: en
+status: true
+dependencies:
+  entity:
+    - field.field.taxonomy_term.wk_office.field_company
+    - field.field.taxonomy_term.wk_office.field_office_country
+    - taxonomy.vocabulary.wk_office
+  module:
+    - entity_reference
+    - text
+id: taxonomy_term.wk_office.default
+label: null
+targetEntityType: taxonomy_term
+bundle: wk_office
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_office_country:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_company:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden: {  }
+third_party_settings: {  }

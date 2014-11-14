@@ -1,0 +1,10 @@
+uuid: c364ab1b-528a-43f7-805d-93cde18f21a4
+langcode: en
+status: true
+dependencies: {  }
+name: Office
+vid: wk_office
+description: 'Wunderkraut office group'
+hierarchy: 1
+weight: 0
+third_party_settings: {  }
