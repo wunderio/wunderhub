@@ -1,7 +1,8 @@
 <?php
 /**
  * @file
- * Install, update and uninstall functions for the Wundersites::Hub installation profile.
+ * Install, update and uninstall functions for the Wundersites::Hub installation
+ * profile.
  */
 
 use Drupal\comment\Plugin\Field\FieldType\CommentItemInterface;

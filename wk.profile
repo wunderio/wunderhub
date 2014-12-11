@@ -15,7 +15,7 @@ use Drupal\Core\Form\FormStateInterface;
 function wk_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
   // Pre-populate the site name with the server name.
   $form['site_information']['site_name']['#default_value'] = \Drupal::request()->server->get('SERVER_NAME');
-  $form['#submit'][] = 'standard_form_install_configure_submit';
+  $form['#submit'][] = 'wk_form_install_configure_submit';
 }
 
 /**
