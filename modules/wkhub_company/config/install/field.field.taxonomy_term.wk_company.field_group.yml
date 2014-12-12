@@ -1,0 +1,27 @@
+uuid: e538f5cf-0a2b-4006-8162-98d0716e5b28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_group
+    - taxonomy.vocabulary.wk_company
+id: taxonomy_term.wk_company.field_group
+field_name: field_group
+entity_type: taxonomy_term
+bundle: wk_company
+label: Group
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      wk_group: wk_group
+    sort:
+      field: _none
+    auto_create: false
+third_party_settings: {  }
+field_type: entity_reference
