@@ -2,7 +2,7 @@ uuid: 2eb724b8-fdf4-4ec6-8f09-9c2ad64e816f
 langcode: en
 status: true
 dependencies:
-  entity:
+  config:
     - field.storage.user.field_person_jobtitle
 id: user.user.field_person_jobtitle
 field_name: field_person_jobtitle

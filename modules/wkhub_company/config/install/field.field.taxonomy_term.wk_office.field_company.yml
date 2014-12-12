@@ -2,7 +2,7 @@ uuid: a9728588-222d-41d0-9600-d6f631e0c2e0
 langcode: en
 status: true
 dependencies:
-  entity:
+  config:
     - field.storage.taxonomy_term.field_company
     - taxonomy.vocabulary.wk_office
 id: taxonomy_term.wk_office.field_company

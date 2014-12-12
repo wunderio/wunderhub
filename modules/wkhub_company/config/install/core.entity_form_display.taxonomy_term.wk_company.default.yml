@@ -2,7 +2,7 @@ uuid: dc24e8fe-6e9f-4306-b900-d486f1fbdf9a
 langcode: en
 status: true
 dependencies:
-  entity:
+  config:
     - field.field.taxonomy_term.wk_company.field_group
     - taxonomy.vocabulary.wk_company
   module:

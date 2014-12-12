@@ -2,7 +2,7 @@ uuid: 46475f3f-927a-4070-9900-dac99c5c75d9
 langcode: und
 status: true
 dependencies:
-  entity:
+  config:
     - field.field.user.user.field_person_email
     - field.field.user.user.field_person_image
     - field.field.user.user.field_person_jobtitle

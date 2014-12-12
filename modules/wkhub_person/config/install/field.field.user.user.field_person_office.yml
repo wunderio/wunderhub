@@ -2,7 +2,7 @@ uuid: df4c79b8-9909-4a6a-b100-d8fd74123ccb
 langcode: en
 status: true
 dependencies:
-  entity:
+  config:
     - field.storage.user.field_person_office
 id: user.user.field_person_office
 field_name: field_person_office

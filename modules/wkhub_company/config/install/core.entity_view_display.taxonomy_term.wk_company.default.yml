@@ -2,7 +2,7 @@ uuid: db7182e4-ba1b-4e4c-9926-382e0f5c1d30
 langcode: en
 status: true
 dependencies:
-  entity:
+  config:
     - field.field.taxonomy_term.wk_company.field_group
     - taxonomy.vocabulary.wk_company
   module:

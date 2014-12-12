@@ -2,7 +2,7 @@ uuid: 9142d714-ccad-4509-b112-183c0992aacb
 langcode: und
 status: true
 dependencies:
-  entity:
+  config:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_person_email
     - field.field.user.user.field_person_image

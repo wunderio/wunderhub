@@ -2,7 +2,7 @@ uuid: b796ccdf-0e85-4f9e-af0a-1042d750e84f
 langcode: en
 status: true
 dependencies:
-  entity:
+  config:
     - field.storage.user.field_person_email
 id: user.user.field_person_email
 field_name: field_person_email

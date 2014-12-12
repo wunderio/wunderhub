@@ -2,7 +2,7 @@ uuid: 8d414468-3b76-4c21-9709-9bebaced732f
 langcode: en
 status: true
 dependencies:
-  entity:
+  config:
     - field.storage.user.field_person_image
 id: user.user.field_person_image
 field_name: field_person_image
