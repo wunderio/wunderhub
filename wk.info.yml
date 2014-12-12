@@ -10,34 +10,25 @@ dependencies:
   - block
   - breakpoint
   - ckeditor
-  - color
   - config
-  - comment
-  - contextual
-  - contact
   - menu_link_content
   - datetime
   - block_content
-  - quickedit
   - editor
   - entity_reference
-  - help
   - image
-  - menu_ui
   - options
   - path
   - taxonomy
   - dblog
-  - search
-  - shortcut
   - toolbar
   - field_ui
   - file
-  - rdf
   - views
   - views_ui
-  - tour
   - rest
+  - wkhub_company
+  - wkhub_person
 themes:
   - bartik
   - seven
