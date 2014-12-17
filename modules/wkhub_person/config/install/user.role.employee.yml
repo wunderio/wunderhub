@@ -5,4 +5,7 @@ dependencies: {  }
 id: employee
 label: Employee
 weight: -9
-permissions: {  }
+permissions:
+  - 'restful get entity:node'
+  - 'restful get entity:user'
+  - 'access user profiles'

@@ -5,6 +5,7 @@ description: 'Install with Wundersites settings.'
 version: 8.x-0.1
 core: 8.x
 dependencies:
+  - basic_auth
   - block
   - block_content
   - breakpoint
@@ -16,6 +17,7 @@ dependencies:
   - entity_reference
   - field_ui
   - file
+  - hal
   - history
   - image
   - menu_link_content
@@ -23,6 +25,7 @@ dependencies:
   - options
   - path
   - rest
+  - restui
   - serialization
   - taxonomy
   - toolbar
