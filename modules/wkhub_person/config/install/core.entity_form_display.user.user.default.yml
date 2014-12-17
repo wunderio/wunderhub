@@ -1,10 +1,9 @@
-uuid: 20d44a8e-06f4-4944-8500-d0d41e664330
+uuid: 8b10b3cf-2f50-475c-9f00-a1928c145841
 langcode: und
 status: true
 dependencies:
   config:
     - field.field.user.user.field_person_email
-    - field.field.user.user.field_person_image
     - field.field.user.user.field_person_jobtitle
     - field.field.user.user.field_person_namefirst
     - field.field.user.user.field_person_namelast
@@ -40,26 +39,26 @@ content:
       progress_indicator: throbber
       preview_image_style: medium
     third_party_settings: {  }
-  field_person_office:
+  field_persongender:
     type: options_buttons
     weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_person_jobtitle:
+  field_person_office:
     type: options_buttons
     weight: 4
     settings: {  }
     third_party_settings: {  }
+  field_person_jobtitle:
+    type: options_buttons
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
   field_person_email:
     type: email_default
-    weight: 5
-    settings:
-      placeholder: name.surname@wunderkraut.com
-    third_party_settings: {  }
-  field_persongender:
-    type: options_buttons
     weight: 6
-    settings: {  }
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   account:
     weight: 7
@@ -67,4 +66,5 @@ content:
     weight: 8
   timezone:
     weight: 9
+hidden: {  }
 third_party_settings: {  }
