@@ -121,10 +121,10 @@ display:
           expose:
             operator: ''
           group: 1
-        rid:
-          id: rid
-          table: users_roles
-          field: rid
+        roles_target_id:
+          id: roles_target_id
+          table: user__roles
+          field: roles_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -168,6 +168,7 @@ display:
       arguments: {  }
       field_langcode: '***LANGUAGE_language_content***'
       field_langcode_add_to_query: null
+      display_extenders: {  }
   rest_export_1:
     display_plugin: rest_export
     id: rest_export_1
@@ -184,9 +185,10 @@ display:
       style:
         type: serializer
         options:
-          uses_fields: 0
+          uses_fields: false
           formats:
             hal_json: hal_json
       row:
         type: data_entity
         options: {  }
+      display_extenders: {  }
