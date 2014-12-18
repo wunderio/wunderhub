@@ -5,28 +5,32 @@ description: 'Install with Wundersites settings.'
 version: 8.x-0.1
 core: 8.x
 dependencies:
-  - node
-  - history
+  - basic_auth
   - block
+  - block_content
   - breakpoint
   - ckeditor
   - config
-  - menu_link_content
   - datetime
-  - block_content
+  - dblog
   - editor
   - entity_reference
-  - image
-  - options
-  - path
-  - taxonomy
-  - dblog
-  - toolbar
   - field_ui
   - file
+  - hal
+  - history
+  - image
+  - menu_link_content
+  - node
+  - options
+  - path
+  - rest
+  - restui
+  - serialization
+  - taxonomy
+  - toolbar
   - views
   - views_ui
-  - rest
   - wkhub_company
   - wkhub_person
 themes:
