@@ -5,22 +5,22 @@
  * Contains Drupal\standard\Tests\StandardTest.
  */
 
-namespace Drupal\standard\Tests;
+namespace Drupal\wk\Tests;
 
 use Drupal\config\Tests\SchemaCheckTestTrait;
 use Drupal\contact\Entity\ContactForm;
 use Drupal\simpletest\WebTestBase;
 
 /**
- * Tests Standard installation profile expectations.
+ * Tests wk installation profile expectations.
  *
  * @group standard
  */
-class StandardTest extends WebTestBase {
+class wkTest extends WebTestBase {
 
   use SchemaCheckTestTrait;
 
-  protected $profile = 'standard';
+  protected $profile = 'wk';
 
   /**
    * Tests Standard installation profile.
