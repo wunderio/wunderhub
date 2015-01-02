@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_person_office
+  module:
+    - entity_reference
 id: user.user.field_person_office
 field_name: field_person_office
 entity_type: user

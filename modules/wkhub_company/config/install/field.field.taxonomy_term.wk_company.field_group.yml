@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_group
     - taxonomy.vocabulary.wk_company
+  module:
+    - entity_reference
 id: taxonomy_term.wk_company.field_group
 field_name: field_group
 entity_type: taxonomy_term

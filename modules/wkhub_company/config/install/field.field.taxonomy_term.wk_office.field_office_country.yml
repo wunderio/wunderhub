@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_office_country
     - taxonomy.vocabulary.wk_office
+  module:
+    - entity_reference
 id: taxonomy_term.wk_office.field_office_country
 field_name: field_office_country
 entity_type: taxonomy_term
