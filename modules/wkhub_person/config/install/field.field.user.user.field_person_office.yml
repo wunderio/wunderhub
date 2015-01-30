@@ -23,6 +23,6 @@ settings:
       wk_office: wk_office
     sort:
       field: _none
-    auto_create: false
+    auto_create: true
 third_party_settings: {  }
 field_type: entity_reference

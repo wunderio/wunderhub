@@ -46,14 +46,22 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_person_office:
-    type: options_buttons
+    type: entity_reference_autocomplete
     weight: 4
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      autocomplete_type: tags
+      placeholder: ''
     third_party_settings: {  }
   field_person_jobtitle:
-    type: options_buttons
+    type: entity_reference_autocomplete
     weight: 5
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      autocomplete_type: tags
+      placeholder: ''
     third_party_settings: {  }
   field_person_email:
     type: email_default

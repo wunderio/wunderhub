@@ -23,6 +23,6 @@ settings:
       jobtitle: jobtitle
     sort:
       field: _none
-    auto_create: false
+    auto_create: true
 third_party_settings: {  }
 field_type: entity_reference
