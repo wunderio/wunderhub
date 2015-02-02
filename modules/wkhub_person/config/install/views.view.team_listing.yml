@@ -14,11 +14,11 @@ dependencies:
     - image
     - rest
     - user
-id: employee_listing
-label: 'Employee listing'
+id: team_listing
+label: 'Team listing'
 module: views
 description: ''
-tag: ''
+tag: 'wunderhub'
 base_table: users
 base_field: uid
 core: 8.x
@@ -537,7 +537,7 @@ display:
     display_options:
       field_langcode: '***LANGUAGE_language_content***'
       field_langcode_add_to_query: null
-      path: api/employees
+      path: api/team
       pager:
         type: none
         options:
@@ -604,7 +604,7 @@ display:
         arguments: false
         style: true
         row: true
-      path: api/employees/%
+      path: api/team/%
       pager:
         type: some
         options:
