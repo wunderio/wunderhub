@@ -537,7 +537,7 @@ display:
     display_options:
       field_langcode: '***LANGUAGE_language_content***'
       field_langcode_add_to_query: null
-      path: employees
+      path: api/employees
       pager:
         type: none
         options:
@@ -604,7 +604,7 @@ display:
         arguments: false
         style: true
         row: true
-      path: employees/%
+      path: api/employees/%
       pager:
         type: some
         options:
