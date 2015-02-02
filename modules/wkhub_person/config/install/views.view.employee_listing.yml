@@ -331,10 +331,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: image_raw_formatter
           settings:
             image_style: ''
-            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
