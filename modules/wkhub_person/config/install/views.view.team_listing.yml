@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.taxonomy_term.field_company
+    - field.storage.taxonomy_term.field_office_country
     - field.storage.user.field_person_jobtitle
     - field.storage.user.field_person_namefirst
     - field.storage.user.field_person_namelast
@@ -11,14 +13,15 @@ dependencies:
   module:
     - entity_reference
     - field
-    - image
+    - image_raw_formatter
     - rest
+    - taxonomy
     - user
 id: team_listing
 label: 'Team listing'
 module: views
 description: ''
-tag: 'wunderhub'
+tag: wunderhub
 base_table: users
 base_field: uid
 core: 8.x
@@ -102,6 +105,12 @@ display:
               raw_output: false
             field_person_office:
               alias: office
+              raw_output: false
+            field_office_country:
+              alias: country
+              raw_output: false
+            field_company:
+              alias: company
               raw_output: false
       fields:
         uid:
@@ -471,6 +480,132 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_office_country:
+          id: field_office_country
+          table: taxonomy_term__field_office_country
+          field: field_office_country
+          relationship: field_person_office
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: ''
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: '0'
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: all
+          delta_offset: '0'
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_company:
+          id: field_company
+          table: taxonomy_term__field_company
+          field: field_company
+          relationship: field_person_office
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: ''
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: '0'
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: all
+          delta_offset: '0'
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       filters:
         status:
           value: true
@@ -524,7 +659,16 @@ display:
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_person_office:
+          id: field_person_office
+          table: user__field_person_office
+          field: field_person_office
+          relationship: none
+          group_type: group
+          admin_label: 'field_person_office: Taxonomy term'
+          required: false
+          plugin_id: standard
       arguments: {  }
       field_langcode: '***LANGUAGE_language_content***'
       field_langcode_add_to_query: null
