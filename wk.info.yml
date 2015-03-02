@@ -20,7 +20,7 @@ dependencies:
   - hal
   - history
   - image
-  - image_url_formatter
+  - image_raw_formatter
   - menu_link_content
   - node
   - options
