@@ -520,19 +520,7 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: user_roles
-      sorts:
-        field_person_namefirst_value:
-          id: field_person_namefirst_value
-          table: user__field_person_namefirst
-          field: field_person_namefirst_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
+      sorts: {  }
       header: {  }
       footer: {  }
       empty: {  }
