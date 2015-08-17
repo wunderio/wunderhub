@@ -1,4 +1,3 @@
-uuid: 99b05572-5fa3-4823-b019-25d58001fbd7
 langcode: en
 status: true
 dependencies:
@@ -19,7 +18,7 @@ default_value_callback: ''
 settings:
   file_directory: pictures
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '24 MB'
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: false
@@ -27,11 +26,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    fid: 0
+    uuid: ''
     alt: ''
     title: ''
     width: null
     height: null
-  handler: default
-third_party_settings: {  }
+  handler: 'default:node'
+  handler_settings: {  }
 field_type: image

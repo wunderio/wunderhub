@@ -1,4 +1,3 @@
-uuid: 43dc57b1-3401-49b4-8200-006505c83fa8
 langcode: en
 status: true
 dependencies:
@@ -10,6 +9,7 @@ entity_type: user
 type: string
 settings:
   max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

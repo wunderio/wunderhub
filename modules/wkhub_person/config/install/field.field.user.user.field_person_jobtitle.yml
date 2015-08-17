@@ -1,4 +1,3 @@
-uuid: 2eb724b8-fdf4-4ec6-8f09-9c2ad64e816f
 langcode: en
 status: true
 dependencies:
@@ -17,12 +16,11 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: default
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      jobtitle: jobtitle
+      job_title: job_title
     sort:
       field: _none
     auto_create: false
-third_party_settings: {  }
 field_type: entity_reference

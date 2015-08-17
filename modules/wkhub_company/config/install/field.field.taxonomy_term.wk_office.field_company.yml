@@ -1,4 +1,3 @@
-uuid: a9728588-222d-41d0-9600-d6f631e0c2e0
 langcode: en
 status: true
 dependencies:
@@ -18,12 +17,11 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: default
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
       wk_company: wk_company
     sort:
       field: _none
     auto_create: false
-third_party_settings: {  }
 field_type: entity_reference

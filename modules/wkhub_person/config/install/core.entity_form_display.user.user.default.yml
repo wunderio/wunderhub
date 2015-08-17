@@ -1,5 +1,4 @@
-uuid: 8b10b3cf-2f50-475c-9f00-a1928c145841
-langcode: und
+langcode: en
 status: true
 dependencies:
   config:
@@ -11,7 +10,6 @@ dependencies:
     - field.field.user.user.field_persongender
     - field.field.user.user.user_picture
   module:
-    - entity_reference
     - image
     - user
 id: user.user.default
@@ -19,53 +17,62 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  account:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+  field_person_email:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_person_jobtitle:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
   field_person_namefirst:
-    type: string_textfield
     weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_person_namelast:
     type: string_textfield
+  field_person_namelast:
     weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  user_picture:
-    type: image_image
-    weight: 2
-    settings:
-      progress_indicator: throbber
-      preview_image_style: medium
-    third_party_settings: {  }
-  field_persongender:
-    type: options_buttons
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
+    type: string_textfield
   field_person_office:
-    type: options_buttons
     weight: 4
     settings: {  }
     third_party_settings: {  }
-  field_person_jobtitle:
     type: options_buttons
-    weight: 5
+  field_persongender:
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_person_email:
-    type: email_default
-    weight: 6
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  account:
-    weight: 7
+    type: options_buttons
   language:
     weight: 8
+    settings: {  }
+    third_party_settings: {  }
   timezone:
-    weight: 9
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: 2
 hidden: {  }
-third_party_settings: {  }

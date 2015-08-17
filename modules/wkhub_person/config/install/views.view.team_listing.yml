@@ -1,4 +1,3 @@
-uuid: b2322bb9-2c96-4eaa-be03-03e67f2c571e
 langcode: en
 status: true
 dependencies:
@@ -10,10 +9,9 @@ dependencies:
     - field.storage.user.field_person_namelast
     - field.storage.user.field_person_office
     - field.storage.user.user_picture
+    - user.role.employee
   module:
-    - entity_reference
-    - field
-    - image_raw_formatter
+    - image
     - rest
     - taxonomy
     - user
@@ -21,8 +19,8 @@ id: team_listing
 label: 'Team listing'
 module: views
 description: ''
-tag: wunderhub
-base_table: users
+tag: ''
+base_table: users_field_data
 base_field: uid
 core: 8.x
 display:
@@ -35,10 +33,9 @@ display:
       access:
         type: perm
         options:
-          perm: 'restful get entity:user'
-        perm: 'access user profiles'
+          perm: 'access user profiles'
       cache:
-        type: none
+        type: tag
         options: {  }
       query:
         type: views_query
@@ -46,7 +43,7 @@ display:
           disable_sql_rewrite: false
           distinct: false
           replica: false
-          query_comment: false
+          query_comment: ''
           query_tags: {  }
       exposed_form:
         type: basic
@@ -80,51 +77,23 @@ display:
             last: 'last »'
           quantity: 9
       style:
-        type: serializer
+        type: default
         options:
-          formats:
-            hal_json: hal_json
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
-        type: data_field
+        type: fields
         options:
-          field_options:
-            uid:
-              alias: uid
-              raw_output: false
-            field_person_namefirst:
-              alias: firstName
-              raw_output: false
-            field_person_namelast:
-              alias: lastName
-              raw_output: false
-            user_picture:
-              alias: picture
-              raw_output: false
-            user_picture_1:
-              alias: picture_thumb
-              raw_output: false
-            user_picture_2:
-              alias: picture_medium
-              raw_output: false
-            user_picture_3:
-              alias: picture_large
-              raw_output: false
-            field_person_jobtitle:
-              alias: jobTitle
-              raw_output: false
-            field_person_office:
-              alias: office
-              raw_output: false
-            field_office_country:
-              alias: country
-              raw_output: false
-            field_company:
-              alias: company
-              raw_output: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
       fields:
         uid:
           id: uid
-          table: users
+          table: users_field_data
           field: uid
           relationship: none
           group_type: group
@@ -148,7 +117,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -170,10 +139,24 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          link_to_user: false
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
           entity_type: user
           entity_field: uid
-          plugin_id: user
+          plugin_id: field
         field_person_namefirst:
           id: field_person_namefirst
           table: user__field_person_namefirst
@@ -200,7 +183,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -225,12 +208,12 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: '0'
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -263,7 +246,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -288,12 +271,12 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: '0'
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -326,7 +309,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -349,14 +332,15 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image_raw_formatter
+          type: image
           settings:
             image_style: ''
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -389,7 +373,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -412,14 +396,15 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image_raw_formatter
+          type: image
           settings:
             image_style: thumbnail
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -452,7 +437,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -475,14 +460,15 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image_raw_formatter
+          type: image
           settings:
             image_style: medium
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -515,7 +501,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -538,14 +524,15 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image_raw_formatter
+          type: image
           settings:
             image_style: large
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -578,7 +565,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -603,12 +590,12 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: '0'
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -641,7 +628,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -666,12 +653,12 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: '0'
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -704,7 +691,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -729,12 +716,12 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: '0'
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -767,7 +754,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: ''
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -792,12 +779,12 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: '0'
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
-          delta_limit: all
-          delta_offset: '0'
+          delta_limit: 0
+          delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
@@ -809,7 +796,9 @@ display:
           value: true
           table: users_field_data
           field: status
-          provider: user
+          plugin_id: boolean
+          entity_type: user
+          entity_field: status
           id: status
           expose:
             operator: ''
@@ -868,27 +857,71 @@ display:
           required: false
           plugin_id: standard
       arguments: {  }
-      field_langcode: '***LANGUAGE_language_content***'
-      field_langcode_add_to_query: null
       display_extenders: {  }
+    cache_metadata:
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user.permissions
+      cacheable: false
   rest_export_1:
     display_plugin: rest_export
     id: rest_export_1
     display_title: Listing
     position: 1
     display_options:
-      field_langcode: '***LANGUAGE_language_content***'
-      field_langcode_add_to_query: null
+      display_extenders: {  }
       path: api/team
+      row:
+        type: data_field
+        options:
+          field_options:
+            uid:
+              alias: uid
+              raw_output: false
+            field_person_namefirst:
+              alias: firstName
+              raw_output: false
+            field_person_namelast:
+              alias: lastName
+              raw_output: false
+            user_picture:
+              alias: picture
+              raw_output: false
+            user_picture_1:
+              alias: picture_thumb
+              raw_output: false
+            user_picture_2:
+              alias: picture_medium
+              raw_output: false
+            user_picture_3:
+              alias: picture_large
+              raw_output: false
+            field_person_jobtitle:
+              alias: jobTitle
+              raw_output: false
+            field_person_office:
+              alias: office
+              raw_output: false
+            field_office_country:
+              alias: country
+              raw_output: false
+            field_company:
+              alias: company
+              raw_output: false
+      display_description: ''
       pager:
         type: none
         options:
           offset: 0
-      display_extenders: {  }
-      display_description: ''
-      defaults:
-        style: true
-        row: true
+    cache_metadata:
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - user.permissions
+      cacheable: false
   rest_export_2:
     display_plugin: rest_export
     id: rest_export_2
@@ -896,13 +929,12 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      field_langcode: '***LANGUAGE_language_content***'
-      field_langcode_add_to_query: null
       display_description: ''
+      path: api/team/%
       arguments:
         uid:
           id: uid
-          table: users_field_data
+          table: users
           field: uid
           relationship: none
           group_type: group
@@ -944,11 +976,53 @@ display:
           plugin_id: numeric
       defaults:
         arguments: false
-        style: true
-        row: true
-      path: api/team/%
       pager:
         type: some
         options:
           items_per_page: 1
           offset: 0
+      row:
+        type: data_field
+        options:
+          field_options:
+            uid:
+              alias: uid
+              raw_output: false
+            field_person_namefirst:
+              alias: firstName
+              raw_output: false
+            field_person_namelast:
+              alias: lastName
+              raw_output: false
+            user_picture:
+              alias: picture
+              raw_output: false
+            user_picture_1:
+              alias: picture_thumb
+              raw_output: false
+            user_picture_2:
+              alias: picture_medium
+              raw_output: false
+            user_picture_3:
+              alias: picture_large
+              raw_output: false
+            field_person_jobtitle:
+              alias: jobTitle
+              raw_output: false
+            field_person_office:
+              alias: office
+              raw_output: false
+            field_office_country:
+              alias: country
+              raw_output: false
+            field_company:
+              alias: company
+              raw_output: false
+    cache_metadata:
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - url
+        - user.permissions
+      cacheable: false

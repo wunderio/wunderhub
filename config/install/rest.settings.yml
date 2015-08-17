@@ -20,9 +20,4 @@ resources:
         - hal_json
       supported_auth:
         - basic_auth
-  'entity:user':
-    GET:
-      supported_formats:
-        - hal_json
-      supported_auth:
-        - basic_auth
+link_domain: null

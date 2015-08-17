@@ -1,3 +1,11 @@
+uuid: 21104405-62e4-4ef9-9100-c4effe6e63a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - taxonomy
 id: taxonomy_term.tags
 targetEntityType: taxonomy_term
 bundle: tags
@@ -10,8 +18,3 @@ fieldMappings:
   description:
     properties:
       - 'schema:description'
-dependencies:
-  config:
-    - taxonomy.vocabulary.tags
-  module:
-    - taxonomy

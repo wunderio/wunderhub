@@ -1,4 +1,3 @@
-uuid: 11191068-d216-48b4-b22b-43541ce922b6
 langcode: en
 status: true
 dependencies:
@@ -13,13 +12,13 @@ settings:
   allowed_values:
     -
       value: female
-      label: female
+      label: Female
     -
       value: male
-      label: male
+      label: Male
     -
       value: other
-      label: other
+      label: Other
   allowed_values_function: ''
 module: options
 locked: false

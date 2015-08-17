@@ -1,21 +1,5 @@
-id: bartik_footer
-theme: bartik
-weight: 0
-status: true
 langcode: en
-region: footer
-plugin: 'system_menu_block:footer'
-settings:
-  visibility: {  }
-  id: 'system_menu_block:footer'
-  label: 'Footer menu'
-  provider: system
-  label_display: visible
-  cache:
-    max_age: -1
-    contexts: {  }
-  level: 1
-  depth: 0
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -23,3 +7,19 @@ dependencies:
     - system
   theme:
     - bartik
+id: bartik_footer
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: -1
+  level: 1
+  depth: 0
+visibility: {  }
