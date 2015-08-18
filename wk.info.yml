@@ -10,13 +10,17 @@ dependencies:
   - block_content
   - breakpoint
   - ckeditor
+  - color
+  - comment
   - config
+  - contact
   - datetime
   - dblog
   - editor
   - entity_reference
   - field_ui
   - file
+  - help
   - hal
   - history
   - image
@@ -25,10 +29,13 @@ dependencies:
   - node
   - options
   - path
+  - rdf
   - rest
   - restui
+  - search
   - serialization
   - taxonomy
+  - text
   - toolbar
   - views
   - views_ui
