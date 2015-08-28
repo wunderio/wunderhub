@@ -14,3 +14,5 @@ permissions:
   - 'skip comment approval'
   - 'access site-wide contact form'
   - 'access shortcuts'
+  - 'restful get entity:node'
+  - 'access user profiles'

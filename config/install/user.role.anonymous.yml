@@ -11,3 +11,5 @@ permissions:
   - 'use text format restricted_html'
   - 'access comments'
   - 'access site-wide contact form'
+  - 'restful get entity:node'
+  - 'access user profiles'
