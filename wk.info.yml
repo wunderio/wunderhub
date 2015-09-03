@@ -2,7 +2,7 @@ name: Wundersites::HUB
 type: profile
 project: wundersites
 description: 'Install with Wundersites settings.'
-version: 8.x-0.1
+version: 8.x-0.2
 core: 8.x
 dependencies:
   - basic_auth
@@ -10,13 +10,17 @@ dependencies:
   - block_content
   - breakpoint
   - ckeditor
+  - color
+  - comment
   - config
+  - contact
   - datetime
   - dblog
   - editor
   - entity_reference
   - field_ui
   - file
+  - help
   - hal
   - history
   - image
@@ -25,10 +29,13 @@ dependencies:
   - node
   - options
   - path
+  - rdf
   - rest
   - restui
+  - search
   - serialization
   - taxonomy
+  - text
   - toolbar
   - views
   - views_ui

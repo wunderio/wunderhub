@@ -1,4 +1,3 @@
-uuid: f725239f-8d9b-43d6-b100-a5a43a88e927
 langcode: en
 status: true
 dependencies: {  }
@@ -7,4 +6,3 @@ vid: country
 description: ''
 hierarchy: 0
 weight: 0
-third_party_settings: {  }

@@ -1,21 +1,12 @@
-uuid: 9142d714-ccad-4509-b112-183c0992aacb
-langcode: und
+langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.field_person_email
-    - field.field.user.user.field_person_image
-    - field.field.user.user.field_person_jobtitle
-    - field.field.user.user.field_person_namefirst
-    - field.field.user.user.field_person_namelast
-    - field.field.user.user.field_person_office
-    - field.field.user.user.field_persongender
   module:
     - image
     - user
 id: user.user.compact
-label: null
 targetEntityType: user
 bundle: user
 mode: compact
@@ -30,16 +21,3 @@ content:
     label: hidden
 hidden:
   member_for: true
-  field_last_name: true
-  field_first_name: true
-  field_person_image: true
-  field_person_namefirst: true
-  field_person_namelast: true
-  field_email: true
-  field_person_email: true
-  field_person_jobtitle: true
-  field_place_of_work: true
-  field_social_media: true
-  field_person_office: true
-  field_persongender: true
-third_party_settings: {  }

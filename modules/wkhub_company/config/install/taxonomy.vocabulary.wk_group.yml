@@ -1,4 +1,3 @@
-uuid: 75a65206-cb0b-4a35-a506-6a4a8dab625f
 langcode: en
 status: true
 dependencies: {  }
@@ -7,4 +6,3 @@ vid: wk_group
 description: 'Wunderkraut Group (Legacy)'
 hierarchy: 0
 weight: 0
-third_party_settings: {  }

@@ -1,15 +1,15 @@
-uuid: 826bf639-bfaa-4d05-9804-4da2a2cff041
 langcode: en
 status: true
 dependencies: {  }
 id: anonymous
 label: 'Anonymous user'
-weight: 0
+weight: -9
+is_admin: false
 permissions:
   - 'use text format plain_text'
   - 'access content'
   - 'use text format restricted_html'
+  - 'access comments'
   - 'access site-wide contact form'
   - 'restful get entity:node'
-  - 'restful get entity:user'
   - 'access user profiles'

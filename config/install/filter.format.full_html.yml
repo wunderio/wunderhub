@@ -1,9 +1,11 @@
-format: full_html
-name: 'Full HTML'
+langcode: en
 status: true
+dependencies:
+  module:
+    - editor
+name: 'Full HTML'
+format: full_html
 weight: 1
-roles:
-  - administrator
 filters:
   filter_align:
     id: filter_align
@@ -29,7 +31,3 @@ filters:
     status: true
     weight: 11
     settings: {  }
-langcode: en
-dependencies:
-  module:
-    - editor
