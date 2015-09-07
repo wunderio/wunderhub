@@ -1,3 +1,4 @@
+uuid: a7b3abd7-88a2-44a7-a300-c9e46df3c21f
 langcode: en
 status: true
 dependencies:
@@ -13,7 +14,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <h4> <h5> <h6> <p> <br> <span> <img>'
+      allowed_html: '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <h4> <h5> <h6> <p> <br> <span> <img> <h1> <h2> <h3> <h4> <h5> <h6>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:

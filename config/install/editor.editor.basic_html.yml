@@ -1,3 +1,4 @@
+uuid: 6f8d67d9-f928-4dd6-a816-224a4e2daba6
 langcode: en
 status: true
 dependencies:
@@ -35,14 +36,15 @@ settings:
           name: Tools
           items:
             - Source
+            - Styles
   plugins:
     stylescombo:
-      styles: ''
+      styles: "h1|Heading 1\r\nh2|Heading 2\r\nh3|Heading 3\r\nh4|Heading 4\r\nh5|Heading 5\r\nh6|Heading 6"
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
