@@ -1,0 +1,9 @@
+name: WunderBlog
+type: module
+core: '8.x'
+project: 'wkhub_blog'
+description: 'Wundersites::Hub: Blog.'
+package: Wundersites
+#dependencies:
+#  - views
+#  - entity_reference
