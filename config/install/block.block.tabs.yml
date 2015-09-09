@@ -6,7 +6,7 @@ dependencies:
 id: tabs
 theme: seven
 region: header
-weight: -5
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

@@ -6,7 +6,7 @@ dependencies:
 id: primaryadminactions
 theme: seven
 region: pre_content
-weight: -2
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:
