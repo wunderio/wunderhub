@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_area
+    - node.type.service
+  module:
+    - entity_reference
+id: node.service.field_service_area
+field_name: field_service_area
+entity_type: node
+bundle: service
+label: 'Service Area'
+description: 'The service area(s) for this service.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      service_area: service_area
+    sort:
+      field: _none
+field_type: entity_reference

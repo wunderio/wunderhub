@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Service
+type: service
+description: 'Details of a specific service offering.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
