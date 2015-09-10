@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro
+    - node.type.case_study
+  module:
+    - text
+id: node.case_study.field_intro
+field_name: field_intro
+entity_type: node
+bundle: case_study
+label: Deck/intro
+description: "The deck intro is used as the summary of your case study. <strong>It is the first copy a reader reads. <em>It may be the only copy a reader reads.</em></strong>\r\n<ul>\r\n<li>summarises learnings to reader</li>\r\n<li>indicates reasons to keep reading</li>\r\n<li>keep to 1 longer or 2 shorter sentences</li>\r\n<li>aim for 25-30 words</li></ul>"
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
