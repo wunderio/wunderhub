@@ -1,4 +1,4 @@
-uuid: 0d83c886-d431-48a8-9d4a-74bcd302acf7
+uuid: c50f5fee-10a9-4c99-9409-9abd88659d08
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - system
   theme:
     - bartik
-id: bartik_content
+id: messages
 theme: bartik
-region: content
+region: breadcrumb
 weight: -5
 provider: null
-plugin: system_main_block
+plugin: system_messages_block
 settings:
-  id: system_main_block
-  label: 'Main page content'
+  id: system_messages_block
+  label: Messages
   provider: system
   label_display: '0'
   cache:
