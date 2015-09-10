@@ -8,3 +8,4 @@ dependencies:
   - views
   - entity_reference
   - wkhub_blog
+  - menu_ui
