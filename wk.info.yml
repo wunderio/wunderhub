@@ -26,6 +26,7 @@ dependencies:
   - image
   - image_raw_formatter
   - menu_link_content
+  - menu_ui
   - node
   - options
   - path
