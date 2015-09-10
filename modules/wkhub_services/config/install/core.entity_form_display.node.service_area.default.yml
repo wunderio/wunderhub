@@ -32,12 +32,9 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_country:
-    type: entity_reference_autocomplete
+    type: options_buttons
     weight: 11
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_image:
     type: image_image
