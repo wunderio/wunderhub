@@ -2,62 +2,59 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_drupal_org_profile
+    - field.field.user.user.field_github
     - field.field.user.user.field_person_email
     - field.field.user.user.field_person_jobtitle
     - field.field.user.user.field_person_namefirst
     - field.field.user.user.field_person_namelast
     - field.field.user.user.field_person_office
     - field.field.user.user.field_persongender
+    - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
   module:
     - image
-    - options
+    - link
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_person_email:
-    weight: 6
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-  field_person_jobtitle:
-    weight: 9
+  field_drupal_org_profile:
+    weight: 8
     label: above
     settings:
-      link: true
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: entity_reference_label
-  field_person_namefirst:
+    type: link
+  field_github:
     weight: 7
     label: above
     settings:
-      link_to_entity: false
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: string
-  field_person_namelast:
-    weight: 10
+    type: link
+  field_twitter:
+    weight: 6
     label: above
     settings:
-      link_to_entity: false
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: string
-  field_person_office:
-    weight: 11
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  field_persongender:
-    weight: 8
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
+    type: link
   member_for:
     weight: 5
   user_picture:
@@ -68,4 +65,11 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
-hidden: {  }
+hidden:
+  field_biography: true
+  field_person_email: true
+  field_person_jobtitle: true
+  field_person_namefirst: true
+  field_person_namelast: true
+  field_person_office: true
+  field_persongender: true

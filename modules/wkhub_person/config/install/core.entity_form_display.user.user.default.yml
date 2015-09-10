@@ -2,70 +2,121 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_drupal_org_profile
+    - field.field.user.user.field_github
     - field.field.user.user.field_person_email
     - field.field.user.user.field_person_jobtitle
     - field.field.user.user.field_person_namefirst
     - field.field.user.user.field_person_namelast
     - field.field.user.user.field_person_office
     - field.field.user.user.field_persongender
+    - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
   module:
+    - field_group
     - image
+    - link
+    - text
     - user
+third_party_settings:
+  field_group:
+    group_user_profiles:
+      children:
+        - field_drupal_org_profile
+        - field_github
+        - field_twitter
+      parent_name: ''
+      weight: '9'
+      label: Profiles
+      format_type: details
+      format_settings:
+        label: Profiles
+        id: ''
+        classes: ''
+        open: 1
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
   account:
-    weight: 7
+    weight: 0
     settings: {  }
     third_party_settings: {  }
   contact:
-    weight: 9
+    weight: 11
     settings: {  }
     third_party_settings: {  }
+  field_biography:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_drupal_org_profile:
+    weight: 14
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_github:
+    weight: 13
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   field_person_email:
-    weight: 6
+    weight: 7
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
   field_person_jobtitle:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
   field_person_namefirst:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-  field_person_namelast:
     weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_person_namelast:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_person_office:
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
   field_persongender:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+  field_twitter:
+    weight: 12
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   language:
-    weight: 8
+    weight: 10
     settings: {  }
     third_party_settings: {  }
   timezone:
-    weight: 10
+    weight: 12
     settings: {  }
     third_party_settings: {  }
   user_picture:
@@ -74,5 +125,5 @@ content:
       progress_indicator: throbber
       preview_image_style: medium
     third_party_settings: {  }
-    weight: 2
+    weight: 3
 hidden: {  }

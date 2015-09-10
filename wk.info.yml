@@ -18,6 +18,7 @@ dependencies:
   - dblog
   - editor
   - entity_reference
+  - field_group
   - field_ui
   - file
   - help
