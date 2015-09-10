@@ -1,6 +1,14 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - services
+    parent: 'services:'
 name: 'Service Area'
 type: service_area
 description: 'A <em>service area</em> is a collection of different <em>services</em>.'
