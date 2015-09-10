@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_company
     - field.storage.taxonomy_term.field_office_country
+    - field.storage.user.field_biography
     - field.storage.user.field_person_jobtitle
     - field.storage.user.field_person_namefirst
     - field.storage.user.field_person_namelast
@@ -14,6 +15,7 @@ dependencies:
     - image_raw_formatter
     - rest
     - taxonomy
+    - text
     - user
 id: team_listing
 label: 'Team listing'
@@ -665,6 +667,68 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_biography:
+          id: field_biography
+          table: user__field_biography
+          field: field_biography
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_office_country:
           id: field_office_country
           table: taxonomy_term__field_office_country
@@ -904,6 +968,9 @@ display:
             field_person_office:
               alias: office
               raw_output: false
+            field_biography:
+              alias: biography
+              raw_output: false
             field_office_country:
               alias: country
               raw_output: false
@@ -965,8 +1032,8 @@ display:
             fail: 'access denied'
           validate_options:
             operation: view
-            multiple: '0'
-            access: 0
+            multiple: 0
+            access: false
             restrict_roles: 0
             roles: {  }
           break_phrase: false
@@ -1011,6 +1078,9 @@ display:
               raw_output: false
             field_person_office:
               alias: office
+              raw_output: false
+            field_biography:
+              alias: biography
               raw_output: false
             field_office_country:
               alias: country
