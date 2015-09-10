@@ -1,21 +1,21 @@
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - help
   theme:
     - bartik
-id: bartik_help
+id: help
 theme: bartik
-region: '-1'
-weight: 0
+region: featured_top
+weight: null
 provider: null
 plugin: help_block
 settings:
   id: help_block
   label: Help
   provider: help
-  label_display: '0'
+  label_display: visible
   cache:
     max_age: -1
 visibility: {  }
