@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-name: WunderPrinciple
+name: Principle
 type: wunderprinciple
 description: 'A principle for Wunder and our ways of working.'
 help: ''
