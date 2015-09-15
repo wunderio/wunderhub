@@ -10,6 +10,7 @@ dependencies:
     - field.storage.node.field_subtitle
     - node.type.service_area
   module:
+    - image
     - image_raw_formatter
     - node
     - rest
@@ -907,6 +908,134 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_image_4:
+          id: field_image_4
+          table: node__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'image alt'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_image_4__alt }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: ''
+            image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_image_5:
+          id: field_image_5
+          table: node__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'image title'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_image_5__title }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: ''
+            image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_image_1:
           id: field_image_1
           table: node__field_image
@@ -1316,6 +1445,12 @@ display:
             field_image:
               alias: image
               raw_output: false
+            field_image_4:
+              alias: image_alt
+              raw_output: false
+            field_image_5:
+              alias: image_title
+              raw_output: false
             field_image_1:
               alias: image_thumb
               raw_output: false
@@ -1396,6 +1531,12 @@ display:
               raw_output: false
             field_image:
               alias: image
+              raw_output: false
+            field_image_4:
+              alias: image_alt
+              raw_output: false
+            field_image_5:
+              alias: image_title
               raw_output: false
             field_image_1:
               alias: image_thumb
