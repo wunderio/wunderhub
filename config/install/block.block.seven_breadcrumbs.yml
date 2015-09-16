@@ -8,7 +8,7 @@ dependencies:
 id: seven_breadcrumbs
 theme: seven
 region: breadcrumb
-weight: 0
+weight: -2
 provider: null
 plugin: system_breadcrumb_block
 settings:
