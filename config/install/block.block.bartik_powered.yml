@@ -8,7 +8,7 @@ dependencies:
 id: bartik_powered
 theme: bartik
 region: footer_fifth
-weight: -6
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:
