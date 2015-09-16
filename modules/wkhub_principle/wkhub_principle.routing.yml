@@ -1,0 +1,6 @@
+wkhub_principle.zen:
+  path: 'api/principles/zen'
+  defaults:
+    _controller: '\Drupal\wkhub_principle\Controller\WkHubPrincipleController::zen'
+  requirements:
+    _permission: 'access content'

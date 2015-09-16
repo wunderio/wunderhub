@@ -1,0 +1,7 @@
+services:
+  wkhub_principle.manager:
+    class: Drupal\wkhub_principle\WkHubPrincipleManager
+    arguments: ['@entity.manager', '@string_translation', '@config.factory', '@wkhub_principle.storage', '@renderer']
+  wkhub_principle.storage:
+    class: Drupal\wkhub_principle\WkHubPrincipleStorage
+    arguments: ['@database']

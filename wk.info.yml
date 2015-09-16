@@ -42,6 +42,7 @@ dependencies:
   - views_ui
   - wkhub_company
   - wkhub_person
+  - wkhub_principle
   - wkhub_services
 themes:
   - bartik
