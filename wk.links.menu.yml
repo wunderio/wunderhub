@@ -2,3 +2,8 @@ wk.front_page:
   title: 'Home'
   route_name: '<front>'
   menu_name: main
+wk.admin_services_settings:
+  title: 'WunderHub services settings'
+  description: 'Services settings for WunderHub.'
+  route_name: wk.admin_services_settings
+  parent: 'system.admin_config_services'

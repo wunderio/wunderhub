@@ -26,6 +26,7 @@ dependencies:
   - image
   - image_raw_formatter
   - menu_link_content
+  - menu_ui
   - node
   - options
   - path
@@ -43,6 +44,7 @@ dependencies:
   - wkhub_person
   - wkhub_blog
   - wkhub_principle
+  - wkhub_services
 themes:
   - bartik
   - seven
