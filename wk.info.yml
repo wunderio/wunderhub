@@ -40,6 +40,7 @@ dependencies:
   - toolbar
   - views
   - views_ui
+  - wkhub_casestudies
   - wkhub_company
   - wkhub_person
   - wkhub_blog
