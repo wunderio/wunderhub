@@ -35,6 +35,7 @@ settings:
           name: Tools
           items:
             - Source
+            - Format
             - Styles
   plugins:
     stylescombo:
