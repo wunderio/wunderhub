@@ -43,6 +43,7 @@ dependencies:
   - wkhub_person
   - wkhub_blog
   - wkhub_principle
+  - wkhub_services
 themes:
   - bartik
   - seven
