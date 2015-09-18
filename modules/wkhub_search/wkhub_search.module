@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains wkhub_search.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function wkhub_search_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the wkhub_search module.
+    case 'help.page.wkhub_search':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Search API for the WunderHub') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
