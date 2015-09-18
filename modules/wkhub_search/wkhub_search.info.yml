@@ -1,0 +1,10 @@
+name: WunderHub Search
+type: module
+description: Search API for the WunderHub
+core: 8.x
+package: Wundersites
+dependencies:
+  - search
+  - views
+  - rest
+
