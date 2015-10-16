@@ -1,0 +1,11 @@
+uuid: fc474967-8a7c-4c00-9000-a6a06bac3132
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_block_user_action
+label: 'Block the selected user(s)'
+type: user
+plugin: user_block_user_action
+configuration: {  }

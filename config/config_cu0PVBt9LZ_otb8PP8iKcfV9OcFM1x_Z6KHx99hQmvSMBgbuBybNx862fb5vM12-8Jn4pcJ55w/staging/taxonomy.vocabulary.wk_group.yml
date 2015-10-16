@@ -1,0 +1,9 @@
+uuid: 87419266-4e7c-488e-b808-8a3d2c12c85c
+langcode: en
+status: true
+dependencies: {  }
+name: Group
+vid: wk_group
+description: 'Wunderkraut Group (Legacy)'
+hierarchy: 0
+weight: 0

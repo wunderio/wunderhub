@@ -1,0 +1,19 @@
+uuid: d9cc5fe2-dc44-46cf-8720-32a5a4b9d9dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_office_country
+field_name: field_office_country
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

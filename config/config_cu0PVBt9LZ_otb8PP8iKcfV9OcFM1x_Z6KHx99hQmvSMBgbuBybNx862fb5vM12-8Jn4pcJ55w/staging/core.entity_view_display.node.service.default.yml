@@ -1,0 +1,62 @@
+uuid: e82cc319-2789-43ad-b02b-43ac862c5e29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service.body
+    - field.field.node.service.field_country
+    - field.field.node.service.field_image
+    - field.field.node.service.field_intro
+    - field.field.node.service.field_kicker
+    - field.field.node.service.field_service_area
+    - field.field.node.service.field_subtitle
+    - node.type.service
+  module:
+    - image
+    - text
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 1
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+  field_intro:
+    type: text_default
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_kicker:
+    type: text_default
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_subtitle:
+    type: string
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_country: true
+  field_service_area: true

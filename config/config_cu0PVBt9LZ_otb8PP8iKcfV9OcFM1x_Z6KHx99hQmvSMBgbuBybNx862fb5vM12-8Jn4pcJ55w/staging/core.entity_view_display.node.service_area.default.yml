@@ -1,0 +1,60 @@
+uuid: 1c77a3bd-2fa1-4353-b629-41e47d6c6cce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service_area.body
+    - field.field.node.service_area.field_country
+    - field.field.node.service_area.field_image
+    - field.field.node.service_area.field_intro
+    - field.field.node.service_area.field_kicker
+    - field.field.node.service_area.field_subtitle
+    - node.type.service_area
+  module:
+    - image
+    - text
+    - user
+id: node.service_area.default
+targetEntityType: node
+bundle: service_area
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 1
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+  field_intro:
+    type: text_default
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_kicker:
+    type: text_default
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_subtitle:
+    type: string
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_country: true

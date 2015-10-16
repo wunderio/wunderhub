@@ -1,0 +1,9 @@
+uuid: 537afdda-9b56-44ac-a400-df8a088ac4f7
+langcode: en
+status: true
+dependencies: {  }
+id: employee
+label: Employee
+weight: -10
+is_admin: null
+permissions: {  }
