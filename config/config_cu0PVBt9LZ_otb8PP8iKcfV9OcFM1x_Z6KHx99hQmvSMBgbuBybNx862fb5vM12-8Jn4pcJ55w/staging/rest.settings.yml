@@ -1,0 +1,14 @@
+resources:
+  'entity:node':
+    GET:
+      supported_formats:
+        - hal_json
+      supported_auth:
+        - cookie
+  menutree:
+    GET:
+      supported_formats:
+        - hal_json
+        - json
+      supported_auth:
+        - cookie

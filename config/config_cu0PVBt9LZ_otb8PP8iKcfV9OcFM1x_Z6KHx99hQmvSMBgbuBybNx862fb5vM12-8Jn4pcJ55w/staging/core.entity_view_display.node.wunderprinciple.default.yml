@@ -1,0 +1,24 @@
+uuid: 8040fd79-e11a-41bc-9301-1a0a994eb593
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wunderprinciple.body
+    - node.type.wunderprinciple
+  module:
+    - text
+    - user
+id: node.wunderprinciple.default
+targetEntityType: node
+bundle: wunderprinciple
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

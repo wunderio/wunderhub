@@ -1,0 +1,11 @@
+uuid: 5d1ea869-8a01-4b16-b918-24f045bdb7a5
+langcode: en
+status: true
+dependencies: {  }
+name: Principle
+type: wunderprinciple
+description: 'A principle for Wunder and our ways of working.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

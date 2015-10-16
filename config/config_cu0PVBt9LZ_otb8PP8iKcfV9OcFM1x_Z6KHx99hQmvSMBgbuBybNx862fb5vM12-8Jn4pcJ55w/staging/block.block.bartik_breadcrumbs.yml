@@ -1,0 +1,20 @@
+uuid: 485e0de3-ec1a-4097-a100-c61e651eee17
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: bartik_breadcrumbs
+theme: bartik
+region: breadcrumb
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

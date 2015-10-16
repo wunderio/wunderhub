@@ -1,0 +1,28 @@
+uuid: 785d51e1-acdd-498f-9838-5630eee74585
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.wk_company.field_group
+    - taxonomy.vocabulary.wk_company
+  module:
+    - text
+id: taxonomy_term.wk_company.default
+targetEntityType: taxonomy_term
+bundle: wk_company
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_group:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden: {  }

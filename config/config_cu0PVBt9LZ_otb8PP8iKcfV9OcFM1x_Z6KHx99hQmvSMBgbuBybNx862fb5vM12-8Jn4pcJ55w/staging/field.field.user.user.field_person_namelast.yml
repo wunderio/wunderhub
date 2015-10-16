@@ -1,0 +1,22 @@
+uuid: 21c4d1c9-959d-420d-892c-44554d23fe32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_person_namelast
+  module:
+    - user
+id: user.user.field_person_namelast
+field_name: field_person_namelast
+entity_type: user
+bundle: user
+label: 'Last Name'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

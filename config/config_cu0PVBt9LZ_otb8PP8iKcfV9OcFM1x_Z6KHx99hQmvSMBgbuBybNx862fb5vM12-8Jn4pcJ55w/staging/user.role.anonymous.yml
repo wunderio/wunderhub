@@ -1,0 +1,16 @@
+uuid: c71cc4de-a41e-4b75-ab09-9fa13a668fb1
+langcode: en
+status: true
+dependencies: {  }
+id: anonymous
+label: 'Anonymous user'
+weight: -9
+is_admin: false
+permissions:
+  - 'use text format plain_text'
+  - 'access content'
+  - 'use text format restricted_html'
+  - 'access comments'
+  - 'access site-wide contact form'
+  - 'restful get entity:node'
+  - 'access user profiles'
