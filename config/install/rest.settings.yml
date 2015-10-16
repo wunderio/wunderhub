@@ -5,21 +5,6 @@ resources:
         - hal_json
       supported_auth:
         - basic_auth
-    POST:
-      supported_formats:
-        - hal_json
-      supported_auth:
-        - basic_auth
-    PATCH:
-      supported_formats:
-        - hal_json
-      supported_auth:
-        - basic_auth
-    DELETE:
-      supported_formats:
-        - hal_json
-      supported_auth:
-        - basic_auth
   menutree:
     GET:
       supported_formats:
@@ -27,4 +12,3 @@ resources:
         - json
       supported_auth:
         - basic_auth
-link_domain: null
