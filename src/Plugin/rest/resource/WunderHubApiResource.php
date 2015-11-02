@@ -38,29 +38,21 @@ class WunderHubApiResource extends ResourceBase {
   public function get() {
     $items = array();
 
-    // Team item
-    $team_url =  Url::fromUri('base:/api/team{/:uid}', array('absolute' => TRUE));
-    $items['team_url'] = urldecode($team_url->toString());
-
     // Menu tree item
     $menutree_url = Url::fromUri('base:/api/menutree/:menu_name', array('absolute' => TRUE));
     $items['menutree_url'] = urldecode($menutree_url->toString());
 
+    // Get all enabled Views in the site with a RESTful export
     foreach (Views::getEnabledViews() as $view) {
-//      foreach ($view->get('display') as $display) {
-//        if ($display['display_plugin'] == 'rest_export') {
-//          print_r($display);
-//        }
-//      }
       foreach ($view->get('display') as $display) {
-
-        if ($display['display_plugin'] == 'rest_export')
-        print_r($view->get('id') . ' | ');
-        print '<pre>';
-        print_r($display['display_options']);
-        print '</pre>';
-//        print "\n";
-//        break;
+        // Get all views with a RESTful export that are accessible to the request
+        if ($display['display_plugin'] == 'rest_export' && $view->access($display['id'])) {
+          // If the view path has a placeholder, replace it with something more readable
+          $view_path = str_replace('/%', '{/:item_id}', $display['display_options']['path']);
+          $view_url = Url::fromUri('base:' . $view_path, array('absolute' => TRUE));
+          // Can we just overwrite paths of the same view?
+          $items[$view->get('id') . '_url'] = urldecode($view_url->toString());
+        }
       }
     }
 
