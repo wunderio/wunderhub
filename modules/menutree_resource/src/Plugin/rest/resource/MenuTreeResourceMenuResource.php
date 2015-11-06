@@ -1,10 +1,10 @@
 <?php
 /**
  * @file
- * Contains \Drupal\wk\Plugin\rest\resource\WunderHubMenuResource.
+ * Contains \Drupal\menutree_resource\Plugin\rest\resource\MenuTreeResourceMenuResource.
  */
 
-namespace Drupal\wk\Plugin\rest\resource;
+namespace Drupal\menutree_resource\Plugin\rest\resource;
 
 use Drupal\rest\Plugin\ResourceBase;
 use Drupal\rest\ResourceResponse;
@@ -18,13 +18,13 @@ use Drupal\Core\Config\ConfigFactoryInterface;
  *
  * @RestResource(
  *   id = "menutree",
- *   label = @Translation("WunderHub: Menu tree"),
+ *   label = @Translation("Resource: Menu tree"),
  *   uri_paths = {
  *     "canonical" = "/api/menutree/{menu}"
  *   }
  * )
  */
-class WunderHubMenuResource extends ResourceBase {
+class MenuTreeResourceMenuResource extends ResourceBase {
 
   /**
    * Responds to GET requests.
@@ -41,8 +41,8 @@ class WunderHubMenuResource extends ResourceBase {
    */
   public function get($menu_name = NULL) {
     if ($menu_name) {
-      // Get WunderHub services config, set at /admin/config/services/wunderhub.
-      $config = \Drupal::config('wk.services_settings');
+      // Get menu tree resource config, set at /admin/config/services/menutree.
+      $config = \Drupal::config('menutree_resource.services_settings');
       $services_menus = $config->get('services_menus');
 
       // Only allow a response if the menu is in config

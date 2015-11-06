@@ -1,0 +1,7 @@
+menutree_resource.admin_services_settings:
+  path: '/admin/config/services/menutree'
+  defaults:
+    _form: '\Drupal\menutree_resource\Form\MenuTreeResourceSettingsForm'
+    _title: 'Menu tree resource settings'
+  requirements:
+    _permission: 'administer site configuration'
