@@ -1,7 +1,0 @@
-wk.admin_services_settings:
-  path: '/admin/config/services/wunderhub'
-  defaults:
-    _form: '\Drupal\wk\Form\WunderHubServicesSettingsForm'
-    _title: 'WunderHub services settings'
-  requirements:
-    _permission: 'administer site configuration'

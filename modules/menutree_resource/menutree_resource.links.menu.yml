@@ -1,0 +1,5 @@
+menutree_resource.admin_services_settings:
+  title: 'Menu Tree Resource settings'
+  description: 'Services settings for Menu Tree Resource.'
+  route_name: menutree_resource.admin_services_settings
+  parent: 'system.admin_config_services'
