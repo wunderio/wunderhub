@@ -1,19 +1,17 @@
 langcode: en
 status: true
 dependencies:
-  module:
-    - system
   theme:
     - bartik
-id: bartik_content
+id: bartik_page_title
 theme: bartik
 region: content
-weight: -2
+weight: -50
 provider: null
-plugin: system_main_block
+plugin: page_title_block
 settings:
-  id: system_main_block
-  label: 'Main page content'
-  provider: system
+  id: page_title_block
+  label: 'Page title'
+  provider: core
   label_display: '0'
 visibility: {  }

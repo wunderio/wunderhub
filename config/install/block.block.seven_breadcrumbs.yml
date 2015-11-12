@@ -8,7 +8,7 @@ dependencies:
 id: seven_breadcrumbs
 theme: seven
 region: breadcrumb
-weight: -2
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -16,6 +16,4 @@ settings:
   label: Breadcrumbs
   provider: system
   label_display: '0'
-  cache:
-    max_age: -1
 visibility: {  }
