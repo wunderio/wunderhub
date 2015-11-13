@@ -1,0 +1,11 @@
+uuid: 47d5430d-42fc-41b3-93a5-35ba4ca9e00d
+langcode: en
+status: true
+dependencies: {  }
+name: Blog
+type: blog
+description: 'A post on our company blog.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

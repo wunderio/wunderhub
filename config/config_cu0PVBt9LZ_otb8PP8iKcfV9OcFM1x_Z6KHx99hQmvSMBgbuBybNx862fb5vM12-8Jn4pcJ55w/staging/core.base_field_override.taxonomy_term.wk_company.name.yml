@@ -1,0 +1,18 @@
+uuid: 0c78523c-1b9f-4737-8b5d-937d98c72b4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_company
+id: taxonomy_term.wk_company.name
+field_name: name
+entity_type: taxonomy_term
+bundle: wk_company
+label: Name
+description: 'The term name.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

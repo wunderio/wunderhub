@@ -1,0 +1,20 @@
+uuid: 200b75c3-9d9e-4757-8e3a-58f82ec710fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_office
+  module:
+    - text
+id: taxonomy_term.wk_office.description
+field_name: description
+entity_type: taxonomy_term
+bundle: wk_office
+label: Description
+description: 'A description of the term.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

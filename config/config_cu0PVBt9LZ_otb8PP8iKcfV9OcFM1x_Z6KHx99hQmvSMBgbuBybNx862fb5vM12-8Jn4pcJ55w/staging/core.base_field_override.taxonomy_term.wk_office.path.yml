@@ -1,0 +1,20 @@
+uuid: 9018c818-81db-43f5-9b04-4b0cc297d75e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_office
+  module:
+    - path
+id: taxonomy_term.wk_office.path
+field_name: path
+entity_type: taxonomy_term
+bundle: wk_office
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

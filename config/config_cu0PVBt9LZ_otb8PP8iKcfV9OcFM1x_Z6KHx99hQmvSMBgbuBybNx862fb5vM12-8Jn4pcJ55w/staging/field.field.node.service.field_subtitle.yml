@@ -1,0 +1,19 @@
+uuid: dbaa4515-ce3f-4be8-9ea1-0e2241f9c5ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.service
+id: node.service.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: service
+label: Subtitle
+description: 'A short sub heading that is displayed after the main title on teasers and promo listings.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,16 @@
+uuid: 43a441f6-8740-4be5-ad05-5cb8ce4d71aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wunderprinciple
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.wunderprinciple
+target_entity_type_id: node
+target_bundle: wunderprinciple
+default_langcode: site_default
+language_alterable: false

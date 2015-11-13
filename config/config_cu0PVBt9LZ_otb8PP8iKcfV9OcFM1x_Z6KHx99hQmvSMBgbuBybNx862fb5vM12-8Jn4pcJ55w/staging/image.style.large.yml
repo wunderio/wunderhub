@@ -1,0 +1,21 @@
+uuid: c52bebf2-a18a-40e0-9a0b-97e717899aaf
+langcode: en
+status: true
+dependencies: {  }
+name: large
+label: 'Large (700)'
+effects:
+  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
+    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
+    id: image_scale
+    weight: -9
+    data:
+      width: 700
+      height: null
+      upscale: false
+  a16b5866-1de6-46d3-a000-c130649a8390:
+    uuid: a16b5866-1de6-46d3-a000-c130649a8390
+    id: image_convert
+    weight: -10
+    data:
+      extension: png

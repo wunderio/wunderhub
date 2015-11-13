@@ -1,0 +1,20 @@
+uuid: 50ca355b-18ab-4b62-9f04-4de405290695
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wunderprinciple
+  module:
+    - path
+id: node.wunderprinciple.path
+field_name: path
+entity_type: node
+bundle: wunderprinciple
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
