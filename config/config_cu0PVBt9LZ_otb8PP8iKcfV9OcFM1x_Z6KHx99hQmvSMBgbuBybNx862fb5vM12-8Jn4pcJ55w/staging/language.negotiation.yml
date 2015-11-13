@@ -6,8 +6,18 @@ url:
     en: ''
     de: de
     fi: fi
+    lv: lv
+    et: et
+    sv: sv
+    nl: nl
+    fr: fr
   domains:
     en: ''
     de: ''
     fi: ''
+    lv: ''
+    et: ''
+    sv: ''
+    nl: ''
+    fr: ''
 selected_langcode: site_default
