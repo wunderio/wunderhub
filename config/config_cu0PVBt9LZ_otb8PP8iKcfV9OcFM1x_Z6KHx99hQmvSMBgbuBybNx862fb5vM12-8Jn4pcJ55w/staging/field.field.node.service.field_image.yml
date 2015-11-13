@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_image
     - node.type.service
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.service.field_image
 field_name: field_image
 entity_type: node
@@ -14,7 +21,7 @@ bundle: service
 label: Image
 description: 'The main image of your service offering page.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

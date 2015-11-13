@@ -14,7 +14,7 @@ bundle: service
 label: Deck/intro
 description: "The deck intro is used as the summary of your service page. <strong>It is the first copy a reader reads. <em>It may be the only copy a reader reads.</em></strong>\r\n<ul>\r\n<li>summarises learnings to reader</li>\r\n<li>indicates reasons to keep reading</li>\r\n<li>keep to 1 longer or 2 shorter sentences</li>\r\n<li>aim for 25-30 words</li></ul>"
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
