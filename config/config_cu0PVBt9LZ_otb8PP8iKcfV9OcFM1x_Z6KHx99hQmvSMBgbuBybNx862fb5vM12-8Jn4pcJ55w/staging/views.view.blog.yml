@@ -1808,7 +1808,7 @@ display:
               alias: image_large
               raw_output: false
             langcode:
-              alias: langcode_translation
+              alias: langcode
               raw_output: false
             langcode_1:
               alias: langcode_original
@@ -1934,7 +1934,7 @@ display:
               alias: image_large
               raw_output: false
             langcode:
-              alias: langcode_translation
+              alias: langcode
               raw_output: false
             langcode_1:
               alias: langcode_original
