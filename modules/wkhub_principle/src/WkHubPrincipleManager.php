@@ -89,12 +89,14 @@ class WkHubPrincipleManager implements WkHubPrincipleManagerInterface {
       foreach ($principle_links as $link) {
         $nid = $link['nid'];
         if (isset($nodes[$nid]) && $nodes[$nid]->isPublished()) {
-          $link['uuid'] = $nodes[$nid]->uuid();
-          $link['title'] = $nodes[$nid]->label();
-          $link['type'] = $nodes[$nid]->bundle();
-          $link['url'] = $nodes[$nid]->url();
+          $entity = $nodes[$nid];
+          $item = array();
+          $item['uuid'] = $entity->uuid();
+          $item['title'] = $this->entityManager->getTranslationFromContext($entity)->label();
+          $item['type'] = $$entity->bundle();
+          $item['url'] = $entity->url();
 //          $link['url_info'] = $nodes[$nid]->urlInfo();
-          $this->principles[$link['nid']] = $link;
+          $this->principles[$link['nid']] = (object) $item;
         }
       }
     }
