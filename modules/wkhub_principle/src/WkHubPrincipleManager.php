@@ -93,7 +93,7 @@ class WkHubPrincipleManager implements WkHubPrincipleManagerInterface {
           $item = array();
           $item['uuid'] = $entity->uuid();
           $item['title'] = $this->entityManager->getTranslationFromContext($entity)->label();
-          $item['type'] = $$entity->bundle();
+          $item['type'] = $entity->bundle();
           $item['url'] = $entity->url();
 //          $link['url_info'] = $nodes[$nid]->urlInfo();
           $this->principles[$link['nid']] = (object) $item;
