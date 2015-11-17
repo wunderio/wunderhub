@@ -1,0 +1,18 @@
+uuid: 3fa35742-2a89-4d79-a811-17127b971792
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wunderprinciple
+id: node.wunderprinciple.changed
+field_name: changed
+entity_type: node
+bundle: wunderprinciple
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

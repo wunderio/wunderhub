@@ -1,0 +1,20 @@
+uuid: ea2245a1-be02-4303-9504-4ad1f121ec14
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_company
+  module:
+    - path
+id: taxonomy_term.wk_company.path
+field_name: path
+entity_type: taxonomy_term
+bundle: wk_company
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

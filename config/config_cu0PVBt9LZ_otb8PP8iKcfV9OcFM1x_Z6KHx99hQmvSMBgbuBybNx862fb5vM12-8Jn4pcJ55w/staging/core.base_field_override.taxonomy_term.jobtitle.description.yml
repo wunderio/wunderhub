@@ -1,0 +1,20 @@
+uuid: 2d26d334-6888-4a42-b45d-93254b44be49
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.jobtitle
+  module:
+    - text
+id: taxonomy_term.jobtitle.description
+field_name: description
+entity_type: taxonomy_term
+bundle: jobtitle
+label: Description
+description: 'A description of the term.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

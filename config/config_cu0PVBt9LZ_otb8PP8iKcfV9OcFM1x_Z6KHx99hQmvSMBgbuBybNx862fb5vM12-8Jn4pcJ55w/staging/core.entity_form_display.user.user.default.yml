@@ -1,0 +1,79 @@
+uuid: 37ef789a-ba2b-4586-93f6-eb07bbad95d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_person_email
+    - field.field.user.user.field_person_jobtitle
+    - field.field.user.user.field_person_namefirst
+    - field.field.user.user.field_person_namelast
+    - field.field.user.user.field_person_office
+    - field.field.user.user.field_persongender
+    - field.field.user.user.user_picture
+  module:
+    - image
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+  field_person_email:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_person_jobtitle:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_person_namefirst:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_person_namelast:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_person_office:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_persongender:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  language:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: medium
+    third_party_settings: {  }
+    weight: 2
+hidden: {  }

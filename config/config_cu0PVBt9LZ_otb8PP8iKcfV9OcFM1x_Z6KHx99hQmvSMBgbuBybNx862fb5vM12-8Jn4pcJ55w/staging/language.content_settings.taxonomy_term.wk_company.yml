@@ -1,0 +1,16 @@
+uuid: fda03fbd-9707-4698-bb00-abca67496733
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_company
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.wk_company
+target_entity_type_id: taxonomy_term
+target_bundle: wk_company
+default_langcode: site_default
+language_alterable: false

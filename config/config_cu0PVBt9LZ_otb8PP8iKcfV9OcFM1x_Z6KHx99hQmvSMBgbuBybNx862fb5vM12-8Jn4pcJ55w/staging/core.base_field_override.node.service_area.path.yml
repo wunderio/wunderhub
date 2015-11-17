@@ -1,0 +1,20 @@
+uuid: f156132f-a3f7-435c-a200-c30755b28fe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.service_area
+  module:
+    - path
+id: node.service_area.path
+field_name: path
+entity_type: node
+bundle: service_area
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

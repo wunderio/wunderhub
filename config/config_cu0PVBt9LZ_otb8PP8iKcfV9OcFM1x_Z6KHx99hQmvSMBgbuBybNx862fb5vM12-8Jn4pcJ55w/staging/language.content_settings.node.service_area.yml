@@ -1,0 +1,16 @@
+uuid: 003c363c-5be0-4184-9701-1fbdfea22c72
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.service_area
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.service_area
+target_entity_type_id: node
+target_bundle: service_area
+default_langcode: site_default
+language_alterable: true

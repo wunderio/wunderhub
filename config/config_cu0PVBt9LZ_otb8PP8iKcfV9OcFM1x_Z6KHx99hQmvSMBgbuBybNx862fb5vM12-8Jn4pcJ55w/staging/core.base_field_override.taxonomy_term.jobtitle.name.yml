@@ -1,0 +1,18 @@
+uuid: 50da0ac0-3b89-4f81-b000-f24c8dfd68f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.jobtitle
+id: taxonomy_term.jobtitle.name
+field_name: name
+entity_type: taxonomy_term
+bundle: jobtitle
+label: Name
+description: 'The term name.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

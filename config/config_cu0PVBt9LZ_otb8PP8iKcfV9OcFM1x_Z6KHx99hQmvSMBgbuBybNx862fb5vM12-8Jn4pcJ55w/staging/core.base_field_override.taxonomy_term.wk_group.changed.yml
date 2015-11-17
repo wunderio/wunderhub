@@ -1,0 +1,18 @@
+uuid: 3002f2bd-ebfa-4ee6-9951-81d3a6685499
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_group
+id: taxonomy_term.wk_group.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: wk_group
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

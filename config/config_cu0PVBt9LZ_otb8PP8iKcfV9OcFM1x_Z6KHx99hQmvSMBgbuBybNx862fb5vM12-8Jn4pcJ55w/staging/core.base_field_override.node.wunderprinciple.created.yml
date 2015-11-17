@@ -1,0 +1,18 @@
+uuid: 999ca611-0867-429f-b303-0332108feb9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wunderprinciple
+id: node.wunderprinciple.created
+field_name: created
+entity_type: node
+bundle: wunderprinciple
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

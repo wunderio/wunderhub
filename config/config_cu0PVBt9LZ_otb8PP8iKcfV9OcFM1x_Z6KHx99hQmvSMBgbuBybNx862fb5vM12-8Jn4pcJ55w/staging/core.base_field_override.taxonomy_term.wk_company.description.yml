@@ -1,0 +1,20 @@
+uuid: 325f9a08-5b1b-479d-9c08-8a825ed29fe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_company
+  module:
+    - text
+id: taxonomy_term.wk_company.description
+field_name: description
+entity_type: taxonomy_term
+bundle: wk_company
+label: Description
+description: 'A description of the term.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
