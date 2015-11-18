@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_person_namelast
+  module:
+    - user
 id: user.user.field_person_namelast
 field_name: field_person_namelast
 entity_type: user

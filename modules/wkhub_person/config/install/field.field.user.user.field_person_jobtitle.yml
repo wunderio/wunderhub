@@ -3,8 +3,9 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_person_jobtitle
+    - taxonomy.vocabulary.jobtitle
   module:
-    - entity_reference
+    - user
 id: user.user.field_person_jobtitle
 field_name: field_person_jobtitle
 entity_type: user
@@ -19,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      job_title: job_title
+      jobtitle: jobtitle
     sort:
       field: _none
     auto_create: false
