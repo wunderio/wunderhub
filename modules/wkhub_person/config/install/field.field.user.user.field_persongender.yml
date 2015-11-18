@@ -5,6 +5,7 @@ dependencies:
     - field.storage.user.field_persongender
   module:
     - options
+    - user
 id: user.user.field_persongender
 field_name: field_persongender
 entity_type: user

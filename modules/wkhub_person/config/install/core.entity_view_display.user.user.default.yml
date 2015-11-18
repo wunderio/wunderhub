@@ -3,25 +3,60 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_biography
+    - field.field.user.user.field_drupal_org_profile
+    - field.field.user.user.field_github
     - field.field.user.user.field_person_email
     - field.field.user.user.field_person_jobtitle
     - field.field.user.user.field_person_namefirst
     - field.field.user.user.field_person_namelast
     - field.field.user.user.field_person_office
     - field.field.user.user.field_persongender
+    - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
   module:
     - image
+    - link
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
-  member_for:
-    weight: 1
-    settings: {  }
+  field_drupal_org_profile:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
+    type: link
+  field_github:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_twitter:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  member_for:
+    weight: 5
   user_picture:
     type: image
     weight: 0
