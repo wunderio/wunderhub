@@ -1,4 +1,3 @@
-uuid: c50f5fee-10a9-4c99-9409-9abd88659d08
 langcode: en
 status: true
 dependencies:
@@ -8,7 +7,7 @@ dependencies:
     - bartik
 id: messages
 theme: bartik
-region: breadcrumb
+region: content
 weight: -5
 provider: null
 plugin: system_messages_block

@@ -21,6 +21,7 @@ dependencies:
     - taxonomy
     - text
     - user
+    - wkhub_blog
 id: team_listing
 label: 'Team listing'
 module: views
@@ -1329,12 +1330,24 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - user.permissions
-      cacheable: false
+      tags:
+        - 'config:field.storage.taxonomy_term.field_company'
+        - 'config:field.storage.taxonomy_term.field_office_country'
+        - 'config:field.storage.user.field_biography'
+        - 'config:field.storage.user.field_drupal_org_profile'
+        - 'config:field.storage.user.field_github'
+        - 'config:field.storage.user.field_person_jobtitle'
+        - 'config:field.storage.user.field_person_namefirst'
+        - 'config:field.storage.user.field_person_namelast'
+        - 'config:field.storage.user.field_person_office'
+        - 'config:field.storage.user.field_twitter'
+        - 'config:field.storage.user.user_picture'
   rest_export_1:
     display_plugin: rest_export
     id: rest_export_1
@@ -1407,12 +1420,24 @@ display:
         options:
           offset: 0
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
         - user.permissions
-      cacheable: false
+      tags:
+        - 'config:field.storage.taxonomy_term.field_company'
+        - 'config:field.storage.taxonomy_term.field_office_country'
+        - 'config:field.storage.user.field_biography'
+        - 'config:field.storage.user.field_drupal_org_profile'
+        - 'config:field.storage.user.field_github'
+        - 'config:field.storage.user.field_person_jobtitle'
+        - 'config:field.storage.user.field_person_namefirst'
+        - 'config:field.storage.user.field_person_namelast'
+        - 'config:field.storage.user.field_person_office'
+        - 'config:field.storage.user.field_twitter'
+        - 'config:field.storage.user.user_picture'
   rest_export_2:
     display_plugin: rest_export
     id: rest_export_2
@@ -1531,10 +1556,22 @@ display:
               alias: drupalorgUrl
               raw_output: false
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
         - url
         - user.permissions
-      cacheable: false
+      tags:
+        - 'config:field.storage.taxonomy_term.field_company'
+        - 'config:field.storage.taxonomy_term.field_office_country'
+        - 'config:field.storage.user.field_biography'
+        - 'config:field.storage.user.field_drupal_org_profile'
+        - 'config:field.storage.user.field_github'
+        - 'config:field.storage.user.field_person_jobtitle'
+        - 'config:field.storage.user.field_person_namefirst'
+        - 'config:field.storage.user.field_person_namelast'
+        - 'config:field.storage.user.field_person_office'
+        - 'config:field.storage.user.field_twitter'
+        - 'config:field.storage.user.user_picture'
