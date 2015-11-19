@@ -1,0 +1,42 @@
+uuid: f67a93c2-ace3-48bc-8c03-3a2dfdfb8f11
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_company
+  module:
+    - path
+    - text
+id: taxonomy_term.wk_company.default
+targetEntityType: taxonomy_term
+bundle: wk_company
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_group:
+    weight: 31
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  name:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

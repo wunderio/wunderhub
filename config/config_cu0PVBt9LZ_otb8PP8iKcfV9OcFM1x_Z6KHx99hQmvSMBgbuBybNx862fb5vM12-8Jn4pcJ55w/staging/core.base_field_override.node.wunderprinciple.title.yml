@@ -1,0 +1,20 @@
+uuid: a9e36c58-82ff-48d6-b508-8fee9d9b589b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wunderprinciple
+id: node.wunderprinciple.title
+field_name: title
+entity_type: node
+bundle: wunderprinciple
+label: Principle
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

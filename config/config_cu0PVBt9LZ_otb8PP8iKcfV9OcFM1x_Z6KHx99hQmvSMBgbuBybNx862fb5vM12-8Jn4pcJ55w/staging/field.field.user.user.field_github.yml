@@ -1,0 +1,23 @@
+uuid: 49889611-42d7-4b91-bc29-41496b4ad263
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_github
+  module:
+    - link
+    - user
+id: user.user.field_github
+field_name: field_github
+entity_type: user
+bundle: user
+label: Github
+description: 'Set your Github username as the link text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

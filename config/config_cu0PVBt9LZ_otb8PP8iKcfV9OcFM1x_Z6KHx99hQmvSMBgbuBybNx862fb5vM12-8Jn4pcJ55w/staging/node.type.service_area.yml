@@ -1,0 +1,19 @@
+uuid: 29b82e5c-77ac-47a1-8200-baa27cda0a79
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - services
+    parent: 'services:'
+name: 'Service Area'
+type: service_area
+description: 'A <em>service area</em> is a collection of different <em>services</em>.'
+help: 'A <em>service area</em> is a collection of different <em>services</em>, and would include things like ''Consultancy'''
+new_revision: false
+preview_mode: 1
+display_submitted: false

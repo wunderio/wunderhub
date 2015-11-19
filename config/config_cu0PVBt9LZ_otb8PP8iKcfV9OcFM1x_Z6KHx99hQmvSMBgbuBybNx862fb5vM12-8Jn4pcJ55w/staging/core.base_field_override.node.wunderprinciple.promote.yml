@@ -1,0 +1,22 @@
+uuid: 4663b4f3-2407-4a33-9f15-21aeef7ce991
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wunderprinciple
+id: node.wunderprinciple.promote
+field_name: promote
+entity_type: node
+bundle: wunderprinciple
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,47 @@
+uuid: c5cd7446-0c6a-4705-8048-72e7d5d32206
+langcode: en
+status: true
+dependencies: {  }
+id: authenticated
+label: 'Authenticated user'
+weight: -8
+is_admin: false
+permissions:
+  - 'use text format plain_text'
+  - 'access content'
+  - 'use text format basic_html'
+  - 'access comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'access site-wide contact form'
+  - 'access shortcuts'
+  - 'restful get entity:node'
+  - 'access user profiles'
+  - 'create blog content'
+  - 'delete any blog content'
+  - 'delete own blog content'
+  - 'delete blog revisions'
+  - 'edit any blog content'
+  - 'edit own blog content'
+  - 'revert blog revisions'
+  - 'view blog revisions'
+  - 'create service_area content'
+  - 'delete any service_area content'
+  - 'delete own service_area content'
+  - 'delete service_area revisions'
+  - 'edit any service_area content'
+  - 'edit own service_area content'
+  - 'revert service_area revisions'
+  - 'view service_area revisions'
+  - 'create service content'
+  - 'delete any service content'
+  - 'delete own service content'
+  - 'delete service revisions'
+  - 'edit any service content'
+  - 'edit own service content'
+  - 'revert service revisions'
+  - 'view service revisions'
+  - 'access content overview'
+  - 'view own unpublished content'
+  - 'create url aliases'
+  - 'edit terms in tags'

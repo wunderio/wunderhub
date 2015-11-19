@@ -1,0 +1,12 @@
+uuid: cddb2366-6c7e-4cc9-ab06-6e298d331f2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_search
+label: Users
+path: user
+weight: 0
+plugin: user_search
+configuration: {  }

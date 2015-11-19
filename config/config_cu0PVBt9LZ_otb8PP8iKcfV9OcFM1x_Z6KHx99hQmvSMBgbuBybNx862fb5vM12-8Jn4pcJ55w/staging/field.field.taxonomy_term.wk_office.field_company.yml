@@ -1,0 +1,27 @@
+uuid: 96fadd5e-37eb-4a02-963b-598a01e1a20e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_company
+    - taxonomy.vocabulary.wk_company
+    - taxonomy.vocabulary.wk_office
+id: taxonomy_term.wk_office.field_company
+field_name: field_company
+entity_type: taxonomy_term
+bundle: wk_office
+label: Company
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      wk_company: wk_company
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

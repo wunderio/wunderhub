@@ -1,0 +1,22 @@
+uuid: f21ae32b-c208-440d-ae00-ba23251fa2a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.wunderprinciple
+  module:
+    - text
+id: node.wunderprinciple.body
+field_name: body
+entity_type: node
+bundle: wunderprinciple
+label: Description
+description: 'Optionally, add a longer description of this WunderPrinciple.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

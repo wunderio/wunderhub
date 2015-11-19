@@ -1,0 +1,14 @@
+uuid: e20a9ade-7de5-4864-9224-365a2ad10dd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.employee
+  module:
+    - user
+id: user_remove_role_action.employee
+label: 'Remove the Employee role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: employee
