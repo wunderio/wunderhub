@@ -1,4 +1,4 @@
-uuid: dbdc8af8-287c-4ccb-9e2e-464dc72eb2eb
+uuid: 5ce2b582-c696-4728-82f3-ec5a0cc6d33c
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: seven_login
 theme: seven
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: user_login_block
 settings:
@@ -17,6 +17,4 @@ settings:
   label: 'User login'
   provider: user
   label_display: visible
-  cache:
-    max_age: -1
 visibility: {  }

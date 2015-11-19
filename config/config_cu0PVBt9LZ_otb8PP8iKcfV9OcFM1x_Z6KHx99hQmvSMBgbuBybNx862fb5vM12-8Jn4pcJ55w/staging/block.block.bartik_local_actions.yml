@@ -1,10 +1,10 @@
-uuid: b1e67c36-ec6e-4d4f-b22f-47a646734726
+uuid: 6cf78d9a-c9db-46e1-955d-f4771b8e710f
 langcode: en
 status: true
 dependencies:
   theme:
     - bartik
-id: primaryadminactions_2
+id: bartik_local_actions
 theme: bartik
 region: content
 weight: -3

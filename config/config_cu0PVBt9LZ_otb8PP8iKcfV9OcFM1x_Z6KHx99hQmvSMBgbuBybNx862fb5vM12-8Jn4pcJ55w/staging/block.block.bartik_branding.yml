@@ -1,4 +1,4 @@
-uuid: 80b8696c-5598-409b-914f-79016e481b38
+uuid: 493a0b03-d306-4b72-b230-3a033de1184b
 langcode: en
 status: true
 dependencies:
@@ -6,10 +6,10 @@ dependencies:
     - system
   theme:
     - bartik
-id: sitebranding
+id: bartik_branding
 theme: bartik
 region: header
-weight: -7
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:

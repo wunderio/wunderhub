@@ -1,4 +1,4 @@
-uuid: 791e1862-aeb4-47cf-b541-65e1aa450c8a
+uuid: 558c9c24-8e29-4415-b846-d2b5cb580cf2
 langcode: en
 status: true
 dependencies:
@@ -244,13 +244,13 @@ display:
       link_url: ''
       link_display: page_1
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }
   feed_1:
     id: feed_1
@@ -283,12 +283,12 @@ display:
           view_mode: default
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }
   page_1:
     id: page_1
@@ -302,11 +302,11 @@ display:
       path: taxonomy/term/%
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }

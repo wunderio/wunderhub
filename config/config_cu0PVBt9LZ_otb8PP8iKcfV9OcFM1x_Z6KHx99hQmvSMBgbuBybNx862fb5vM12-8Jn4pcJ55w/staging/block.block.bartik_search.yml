@@ -1,4 +1,4 @@
-uuid: 669538b5-754e-42ff-b400-a72853e7bce2
+uuid: 65802abe-5dca-48dc-8921-cf0f1191927b
 langcode: en
 status: false
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: bartik_search
 theme: bartik
 region: '-1'
-weight: -4
+weight: -1
 provider: null
 plugin: search_form_block
 settings:
@@ -17,6 +17,4 @@ settings:
   label: Search
   provider: search
   label_display: visible
-  cache:
-    max_age: -1
 visibility: {  }

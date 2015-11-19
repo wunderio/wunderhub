@@ -1,4 +1,4 @@
-uuid: fcb6bfe8-fb09-4f94-bd0d-13fa477a79c7
+uuid: 4d44d0af-3cc4-4236-a3c0-2f24310f7318
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <h4> <h5> <h6> <p> <br> <span> <img> <h1> <h2> <h3> <h4> <h5> <h6>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h4 id> <h5 id> <h6 id> <p> <br> <span> <img src alt height width data-align data-caption>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:

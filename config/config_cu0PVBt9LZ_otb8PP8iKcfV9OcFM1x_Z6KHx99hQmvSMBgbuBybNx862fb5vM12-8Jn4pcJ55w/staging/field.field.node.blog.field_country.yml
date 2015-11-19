@@ -1,10 +1,11 @@
-uuid: 04962114-d7cd-429f-be00-aac8afb96c54
+uuid: 33bbea2d-994f-4597-bc75-97527589bdfa
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_country
     - node.type.blog
+    - taxonomy.vocabulary.country
 id: node.blog.field_country
 field_name: field_country
 entity_type: node

@@ -1,4 +1,4 @@
-uuid: bf612c96-66e2-4ec3-8e2d-458fbabddb3a
+uuid: 845a785c-bc07-4b0d-9688-48fc7cbf740b
 langcode: en
 status: true
 dependencies:
@@ -8,12 +8,14 @@ dependencies:
     - field.storage.user.field_biography
     - field.storage.user.field_drupal_org_profile
     - field.storage.user.field_github
+    - field.storage.user.field_linkedin
     - field.storage.user.field_person_jobtitle
     - field.storage.user.field_person_namefirst
     - field.storage.user.field_person_namelast
     - field.storage.user.field_person_office
     - field.storage.user.field_twitter
     - field.storage.user.user_picture
+    - taxonomy.vocabulary.country
     - user.role.employee
   module:
     - image_raw_formatter
@@ -673,68 +675,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_biography:
-          id: field_biography
-          table: user__field_biography
-          field: field_biography
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         field_office_country:
           id: field_office_country
           table: taxonomy_term__field_office_country
@@ -861,18 +801,18 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_twitter:
-          id: field_twitter
-          table: user__field_twitter
-          field: field_twitter
+        field_biography:
+          id: field_biography
+          table: user__field_biography
+          field: field_biography
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'twitter name'
+          label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: '{{ field_twitter__title }}'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -909,216 +849,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: title
-          type: link_separate
-          settings:
-            trim_length: 80
-            url_only: false
-            url_plain: false
-            rel: '0'
-            target: '0'
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_twitter_1:
-          id: field_twitter_1
-          table: user__field_twitter
-          field: field_twitter
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'twitter url'
-          exclude: false
-          alter:
-            alter_text: true
-            text: '{{ field_twitter_1__uri }}'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: uri
-          type: link_separate
-          settings:
-            trim_length: 80
-            url_only: false
-            url_plain: false
-            rel: '0'
-            target: '0'
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_github:
-          id: field_github
-          table: user__field_github
-          field: field_github
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'github name'
-          exclude: false
-          alter:
-            alter_text: true
-            text: '{{ field_github__title }}'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: uri
-          type: link_separate
-          settings:
-            trim_length: 80
-            url_only: false
-            url_plain: false
-            rel: '0'
-            target: '0'
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_github_1:
-          id: field_github_1
-          table: user__field_github
-          field: field_github
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'github url'
-          exclude: false
-          alter:
-            alter_text: true
-            text: '{{ field_github_1__uri }}'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: uri
-          type: link_separate
-          settings:
-            trim_length: 80
-            url_only: false
-            url_plain: false
-            rel: '0'
-            target: '0'
-          group_column: ''
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -1136,11 +870,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'drupal.org name'
+          label: ''
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_drupal_org_profile__title }}'
+            text: '{{ field_drupal_org_profile__uri }}'
             make_link: false
             path: ''
             absolute: false
@@ -1203,11 +937,78 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'drupal.org url'
+          label: ''
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_drupal_org_profile_1__uri }}'
+            text: '{{ field_drupal_org_profile_1__title }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_github:
+          id: field_github
+          table: user__field_github
+          field: field_github
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_github__uri }}'
             make_link: false
             path: ''
             absolute: false
@@ -1246,6 +1047,341 @@ display:
           hide_alter_empty: true
           click_sort_column: uri
           type: link_separate
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_github_1:
+          id: field_github_1
+          table: user__field_github
+          field: field_github
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_github_1__title }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_twitter:
+          id: field_twitter
+          table: user__field_twitter
+          field: field_twitter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_twitter__uri }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link_separate
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_twitter_1:
+          id: field_twitter_1
+          table: user__field_twitter
+          field: field_twitter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_twitter_1__title }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_linkedin:
+          id: field_linkedin
+          table: user__field_linkedin
+          field: field_linkedin
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_linkedin__uri }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link_separate
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_linkedin_1:
+          id: field_linkedin_1
+          table: user__field_linkedin
+          field: field_linkedin
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_linkedin_1__title }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
           settings:
             trim_length: 80
             url_only: false
@@ -1314,7 +1450,169 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: user_roles
-      sorts: {  }
+        field_company_target_id:
+          id: field_company_target_id
+          table: taxonomy_term__field_company
+          field: field_company_target_id
+          relationship: field_person_office
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_company_target_id_op
+            label: Company
+            description: ''
+            use_operator: false
+            operator: field_company_target_id_op
+            identifier: company
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              employee: '0'
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: country
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_office_country_target_id:
+          id: field_office_country_target_id
+          table: taxonomy_term__field_office_country
+          field: field_office_country_target_id
+          relationship: field_person_office
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_office_country_target_id_op
+            label: Country
+            description: ''
+            use_operator: false
+            operator: field_office_country_target_id_op
+            identifier: country
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              employee: '0'
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: country
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_person_office_target_id:
+          id: field_person_office_target_id
+          table: user__field_person_office
+          field: field_person_office_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_person_office_target_id_op
+            label: Office
+            description: ''
+            use_operator: false
+            operator: field_person_office_target_id_op
+            identifier: office
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              employee: '0'
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: country
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      sorts:
+        field_office_country_target_id:
+          id: field_office_country_target_id
+          table: taxonomy_term__field_office_country
+          field: field_office_country_target_id
+          relationship: field_person_office
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+        field_person_namelast_value:
+          id: field_person_namelast_value
+          table: user__field_person_namelast
+          field: field_person_namelast_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
       header: {  }
       footer: {  }
       empty: {  }
@@ -1330,12 +1628,18 @@ display:
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - user.permissions
       tags:
         - 'config:field.storage.taxonomy_term.field_company'
@@ -1343,6 +1647,7 @@ display:
         - 'config:field.storage.user.field_biography'
         - 'config:field.storage.user.field_drupal_org_profile'
         - 'config:field.storage.user.field_github'
+        - 'config:field.storage.user.field_linkedin'
         - 'config:field.storage.user.field_person_jobtitle'
         - 'config:field.storage.user.field_person_namefirst'
         - 'config:field.storage.user.field_person_namelast'
@@ -1388,32 +1693,38 @@ display:
             field_person_office:
               alias: office
               raw_output: false
-            field_biography:
-              alias: biography
-              raw_output: false
             field_office_country:
               alias: country
               raw_output: false
             field_company:
               alias: company
               raw_output: false
-            field_twitter:
-              alias: twitterName
-              raw_output: false
-            field_twitter_1:
-              alias: twitterUrl
-              raw_output: false
-            field_github:
-              alias: githubName
-              raw_output: false
-            field_github_1:
-              alias: githubUrl
+            field_biography:
+              alias: biography
               raw_output: false
             field_drupal_org_profile:
-              alias: drupalorgName
+              alias: drupalorgUrl
+              raw_output: false
+            field_github:
+              alias: githubUrl
+              raw_output: false
+            field_linkedin:
+              alias: linkedinUrl
+              raw_output: false
+            field_twitter:
+              alias: twitterUrl
               raw_output: false
             field_drupal_org_profile_1:
-              alias: drupalorgUrl
+              alias: drupalorgTitle
+              raw_output: false
+            field_github_1:
+              alias: githubTitle
+              raw_output: false
+            field_linkedin_1:
+              alias: linkedinTitle
+              raw_output: false
+            field_twitter_1:
+              alias: twitterTitle
               raw_output: false
       display_description: ''
       pager:
@@ -1426,6 +1737,8 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
+        - url
+        - user
         - user.permissions
       tags:
         - 'config:field.storage.taxonomy_term.field_company'
@@ -1433,6 +1746,7 @@ display:
         - 'config:field.storage.user.field_biography'
         - 'config:field.storage.user.field_drupal_org_profile'
         - 'config:field.storage.user.field_github'
+        - 'config:field.storage.user.field_linkedin'
         - 'config:field.storage.user.field_person_jobtitle'
         - 'config:field.storage.user.field_person_namefirst'
         - 'config:field.storage.user.field_person_namelast'
@@ -1456,7 +1770,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          default_action: 'not found'
+          default_action: ignore
           exception:
             value: all
             title_enable: false
@@ -1493,6 +1807,8 @@ display:
           plugin_id: numeric
       defaults:
         arguments: false
+        filters: false
+        filter_groups: false
       pager:
         type: some
         options:
@@ -1529,33 +1845,94 @@ display:
             field_person_office:
               alias: office
               raw_output: false
-            field_biography:
-              alias: biography
-              raw_output: false
             field_office_country:
               alias: country
               raw_output: false
             field_company:
               alias: company
               raw_output: false
-            field_twitter:
-              alias: twitterName
-              raw_output: false
-            field_twitter_1:
-              alias: twitterUrl
-              raw_output: false
-            field_github:
-              alias: githubName
-              raw_output: false
-            field_github_1:
-              alias: githubUrl
+            field_biography:
+              alias: biography
               raw_output: false
             field_drupal_org_profile:
-              alias: drupalorgName
-              raw_output: false
-            field_drupal_org_profile_1:
               alias: drupalorgUrl
               raw_output: false
+            field_drupal_org_profile_1:
+              alias: drupalorgTitle
+              raw_output: false
+            field_github:
+              alias: githubUrl
+              raw_output: false
+            field_github_1:
+              alias: githubTitle
+              raw_output: false
+            field_twitter:
+              alias: twitterUrl
+              raw_output: false
+            field_twitter_1:
+              alias: twitterTitle
+              raw_output: false
+            field_linkedin:
+              alias: linkedinUrl
+              raw_output: false
+            field_linkedin_1:
+              alias: linkedinTitle
+              raw_output: false
+      filters:
+        status:
+          value: true
+          table: users_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: user
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        roles_target_id:
+          id: roles_target_id
+          table: user__roles
+          field: roles_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            employee: employee
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: user_roles
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -1570,6 +1947,7 @@ display:
         - 'config:field.storage.user.field_biography'
         - 'config:field.storage.user.field_drupal_org_profile'
         - 'config:field.storage.user.field_github'
+        - 'config:field.storage.user.field_linkedin'
         - 'config:field.storage.user.field_person_jobtitle'
         - 'config:field.storage.user.field_person_namefirst'
         - 'config:field.storage.user.field_person_namelast'

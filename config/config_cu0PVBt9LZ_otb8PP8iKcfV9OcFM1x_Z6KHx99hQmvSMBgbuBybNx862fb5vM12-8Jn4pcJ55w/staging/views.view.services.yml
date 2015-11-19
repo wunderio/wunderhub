@@ -1,4 +1,4 @@
-uuid: 52ff6f0a-eacc-42dc-8806-6e3dee53415e
+uuid: 87bc17c5-933d-40ea-a50e-51fc95f5c67b
 langcode: en
 status: true
 dependencies:
@@ -1479,6 +1479,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1487,8 +1488,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_country'
@@ -1764,6 +1763,7 @@ display:
         groups:
           1: AND
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1771,8 +1771,6 @@ display:
         - url
         - 'user.node_grants:view'
         - user.permissions
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_country'
@@ -1962,6 +1960,7 @@ display:
         groups:
           1: AND
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1969,8 +1968,6 @@ display:
         - url
         - 'user.node_grants:view'
         - user.permissions
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_country'

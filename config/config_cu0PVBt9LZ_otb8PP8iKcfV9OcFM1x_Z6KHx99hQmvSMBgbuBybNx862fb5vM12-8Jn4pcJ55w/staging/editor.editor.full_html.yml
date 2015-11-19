@@ -1,4 +1,4 @@
-uuid: 8a2ab7cb-909c-4994-9900-a8c919c1ff43
+uuid: 1acdcbff-dd60-4e67-9fed-096433a9482a
 langcode: en
 status: true
 dependencies:
@@ -57,5 +57,5 @@ image_upload:
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

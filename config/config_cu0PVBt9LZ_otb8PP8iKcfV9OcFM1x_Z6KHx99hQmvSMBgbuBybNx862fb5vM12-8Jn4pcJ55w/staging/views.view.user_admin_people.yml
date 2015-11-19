@@ -1,4 +1,4 @@
-uuid: 026e162e-c18a-4a1a-a839-5742c5034904
+uuid: b5212e33-b1ca-4c26-aa1e-429968aa8665
 langcode: en
 status: true
 dependencies:
@@ -51,10 +51,10 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -397,14 +397,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          plugin_id: field
+          entity_type: user
+          entity_field: created
           type: timestamp_ago
           settings:
             future_format: '@interval'
             past_format: '@interval'
             granularity: 2
-          plugin_id: field
-          entity_type: user
-          entity_field: created
         access:
           id: access
           table: users_field_data
@@ -453,14 +453,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          plugin_id: field
+          entity_type: user
+          entity_field: access
           type: timestamp_ago
           settings:
             future_format: '@interval hence'
             past_format: '@interval ago'
             granularity: 2
-          plugin_id: field
-          entity_type: user
-          entity_field: access
         operations:
           id: operations
           table: users
@@ -870,13 +870,13 @@ display:
           1: AND
       display_extenders: {  }
     cache_metadata:
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
         - user.permissions
-      max-age: 0
       tags: {  }
   page_1:
     display_plugin: page
@@ -903,11 +903,11 @@ display:
         show_admin_links: false
       display_extenders: {  }
     cache_metadata:
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
         - user.permissions
-      max-age: 0
       tags: {  }

@@ -1,10 +1,10 @@
-uuid: 58250bb4-c602-4c6a-bd24-360a64b756f7
+uuid: 195e5590-73d6-458c-bdf7-9fb68bfdaf82
 langcode: en
 status: true
 dependencies:
   theme:
     - seven
-id: primaryadminactions
+id: seven_local_actions
 theme: seven
 region: content
 weight: -4

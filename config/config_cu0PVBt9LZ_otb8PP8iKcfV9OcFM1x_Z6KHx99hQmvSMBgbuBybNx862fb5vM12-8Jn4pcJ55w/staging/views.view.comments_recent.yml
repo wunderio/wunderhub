@@ -1,4 +1,4 @@
-uuid: 592c7980-c7ff-45b6-9d09-094c27db5049
+uuid: e6de5270-6ee9-4a45-b1c1-b1d523063d36
 langcode: en
 status: true
 dependencies:
@@ -165,13 +165,13 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          entity_type: comment
+          entity_field: changed
           type: timestamp_ago
           settings:
             future_format: '@interval hence'
             past_format: '@interval ago'
             granularity: 2
-          entity_type: comment
-          entity_field: changed
       filters:
         status:
           value: true
@@ -239,11 +239,11 @@ display:
           plugin_id: text_custom
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
-      max-age: -1
       tags: {  }
   block_1:
     display_plugin: block
@@ -257,9 +257,9 @@ display:
         items_per_page: true
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
-      max-age: -1
       tags: {  }

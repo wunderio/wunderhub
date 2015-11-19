@@ -1,8 +1,8 @@
-uuid: 669162ac-a1f5-4a48-b600-c78833920d07
+uuid: b364ad57-26e8-449b-9504-d49dee9fea14
 langcode: en
 status: true
 dependencies: {  }
 id: footer
 label: Footer
-description: 'Site information links'
+description: 'Use this for linking to site information.'
 locked: true

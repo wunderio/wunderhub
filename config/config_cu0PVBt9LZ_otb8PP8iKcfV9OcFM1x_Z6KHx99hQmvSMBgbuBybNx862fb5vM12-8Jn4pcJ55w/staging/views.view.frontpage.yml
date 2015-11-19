@@ -1,4 +1,4 @@
-uuid: 3d9ca849-c5f4-4e94-af1a-26c6ffb226a1
+uuid: 474716a0-b04e-4285-8cc6-3a16f92a3e3b
 langcode: en
 status: true
 dependencies:
@@ -177,10 +177,10 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           quantity: 9
       query:
         type: views_query
@@ -243,12 +243,12 @@ display:
     id: default
     position: 0
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }
   feed_1:
     display_plugin: feed
@@ -279,11 +279,11 @@ display:
           view_mode: rss
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }
   page_1:
     display_options:
@@ -294,10 +294,10 @@ display:
     id: page_1
     position: 1
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }

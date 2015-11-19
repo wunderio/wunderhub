@@ -1,4 +1,4 @@
-uuid: 842db209-b4fa-4980-9808-8be2a84173bd
+uuid: 99162f0b-6888-42dc-95a3-da58499da66a
 langcode: en
 status: true
 dependencies:
@@ -196,11 +196,11 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
-      max-age: -1
       tags: {  }
   who_s_online_block:
     display_plugin: block
@@ -212,9 +212,9 @@ display:
       display_description: 'A list of users that are currently logged in.'
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
-      max-age: -1
       tags: {  }

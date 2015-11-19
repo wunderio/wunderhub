@@ -1,4 +1,4 @@
-uuid: e3bf1e24-1bd6-4701-a53a-5881a4fa4128
+uuid: f8b2579a-9193-41bb-8fc7-885e995d5b43
 langcode: en
 status: true
 dependencies:
@@ -1392,6 +1392,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1399,8 +1400,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_country'
@@ -1417,6 +1416,7 @@ display:
       display_extenders: {  }
       path: blog
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1424,8 +1424,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_country'
@@ -1527,6 +1525,7 @@ display:
           quantity: 9
       display_description: ''
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1535,8 +1534,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_country'
@@ -1695,6 +1692,7 @@ display:
           plugin_id: string
       relationships: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1702,8 +1700,6 @@ display:
         - url
         - 'user.node_grants:view'
         - user.permissions
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_country'

@@ -1,4 +1,4 @@
-uuid: 8eb132c8-000d-4797-801e-30f9c44cb9cd
+uuid: afad69d7-8497-4fe0-8a4e-de2f59da59bf
 langcode: en
 status: true
 dependencies:
@@ -166,11 +166,11 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
-      max-age: -1
       tags: {  }
   block_1:
     display_plugin: block
@@ -183,9 +183,9 @@ display:
       block_category: User
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
-      max-age: -1
       tags: {  }

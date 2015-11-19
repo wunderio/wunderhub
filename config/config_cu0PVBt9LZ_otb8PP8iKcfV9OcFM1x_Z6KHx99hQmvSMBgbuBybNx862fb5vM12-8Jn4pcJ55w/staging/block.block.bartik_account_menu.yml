@@ -1,4 +1,4 @@
-uuid: 7934c4a5-be70-41f3-9105-5fa37442a7d3
+uuid: 1b663054-17a3-4cd3-9695-c799855c4546
 langcode: en
 status: true
 dependencies:
@@ -21,6 +21,4 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
-  cache:
-    max_age: -1
 visibility: {  }

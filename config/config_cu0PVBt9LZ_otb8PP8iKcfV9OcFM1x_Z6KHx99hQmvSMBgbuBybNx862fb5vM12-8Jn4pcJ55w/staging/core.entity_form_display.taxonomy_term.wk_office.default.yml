@@ -1,8 +1,10 @@
-uuid: 030753bd-a353-4ca8-ae23-351c4567924f
+uuid: 9babc543-9885-4b82-b950-dc71be30190f
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.wk_office.field_company
+    - field.field.taxonomy_term.wk_office.field_office_country
     - taxonomy.vocabulary.wk_office
   module:
     - path

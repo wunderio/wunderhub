@@ -1,4 +1,4 @@
-uuid: 8ae1f0f2-df7a-4cc3-a100-f73bb5d44a1d
+uuid: c4f112d4-3bf1-4af0-afb9-864498cf4b4e
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - help
   theme:
     - bartik
-id: help
+id: bartik_help
 theme: bartik
 region: content
 weight: -4
@@ -16,7 +16,5 @@ settings:
   id: help_block
   label: Help
   provider: help
-  label_display: visible
-  cache:
-    max_age: -1
+  label_display: '0'
 visibility: {  }

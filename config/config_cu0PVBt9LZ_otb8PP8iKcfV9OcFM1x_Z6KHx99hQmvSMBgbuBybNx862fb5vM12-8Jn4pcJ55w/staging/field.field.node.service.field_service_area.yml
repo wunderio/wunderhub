@@ -1,10 +1,11 @@
-uuid: d393dd4d-bcaf-4ddd-b562-9895cf6f8075
+uuid: e807cc6e-b5d7-4bef-b528-6968013296f6
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_service_area
     - node.type.service
+    - node.type.service_area
 id: node.service.field_service_area
 field_name: field_service_area
 entity_type: node

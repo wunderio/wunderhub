@@ -1,4 +1,4 @@
-uuid: 25962847-8cb0-4ecd-a834-5291c633ebf9
+uuid: 39344d5e-6e46-43c1-a2f6-ad85d577a964
 langcode: en
 status: false
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: bartik_login
 theme: bartik
 region: '-1'
-weight: -3
+weight: 0
 provider: null
 plugin: user_login_block
 settings:
@@ -17,6 +17,4 @@ settings:
   label: 'User login'
   provider: user
   label_display: visible
-  cache:
-    max_age: -1
 visibility: {  }

@@ -1,10 +1,10 @@
-uuid: d406611f-3dd0-4018-9010-16b9d6550b6b
+uuid: e4abe495-f14c-4ace-96ea-4bba34b1dc33
 langcode: en
 status: true
 dependencies:
   theme:
     - bartik
-id: tabs_2
+id: bartik_local_tasks
 theme: bartik
 region: content
 weight: -6
@@ -17,6 +17,4 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-  cache:
-    max_age: 0
 visibility: {  }

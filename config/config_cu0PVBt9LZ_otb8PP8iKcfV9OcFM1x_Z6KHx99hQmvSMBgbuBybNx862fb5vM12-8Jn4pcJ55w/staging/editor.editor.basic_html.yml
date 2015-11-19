@@ -1,4 +1,4 @@
-uuid: d5566d21-5385-4a19-ab00-bb01d939aede
+uuid: f756e652-b832-44a4-8c15-ce795ba66b95
 langcode: en
 status: true
 dependencies:
@@ -36,11 +36,9 @@ settings:
           name: Tools
           items:
             - Source
-            - Format
-            - Styles
   plugins:
     stylescombo:
-      styles: "h1|Heading 1\r\nh2|Heading 2\r\nh3|Heading 3\r\nh4|Heading 4\r\nh5|Heading 5\r\nh6|Heading 6"
+      styles: ''
 image_upload:
   status: true
   scheme: public

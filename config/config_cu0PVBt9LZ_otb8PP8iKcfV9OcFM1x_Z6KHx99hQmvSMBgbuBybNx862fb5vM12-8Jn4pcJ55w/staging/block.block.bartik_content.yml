@@ -1,4 +1,4 @@
-uuid: 0d83c886-d431-48a8-9d4a-74bcd302acf7
+uuid: a0e78faa-e144-4ac8-961f-6a950cfedf96
 langcode: en
 status: true
 dependencies:
@@ -17,6 +17,4 @@ settings:
   label: 'Main page content'
   provider: system
   label_display: '0'
-  cache:
-    max_age: -1
 visibility: {  }

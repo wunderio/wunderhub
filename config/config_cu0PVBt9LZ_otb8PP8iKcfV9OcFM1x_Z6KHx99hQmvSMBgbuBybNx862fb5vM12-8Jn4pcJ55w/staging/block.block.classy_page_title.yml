@@ -1,13 +1,13 @@
-uuid: 1a6274e1-7fee-4bd1-ac49-73c82c8634d5
+uuid: ac2bf4b2-d833-4d1e-91c1-2ea4383e6799
 langcode: en
 status: true
 dependencies:
   theme:
-    - seven
-id: pagetitle
-theme: seven
-region: header
-weight: -5
+    - classy
+id: classy_page_title
+theme: classy
+region: content
+weight: -50
 provider: null
 plugin: page_title_block
 settings:

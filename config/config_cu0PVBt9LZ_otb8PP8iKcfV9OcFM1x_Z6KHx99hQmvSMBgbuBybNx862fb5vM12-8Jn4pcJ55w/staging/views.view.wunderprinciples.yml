@@ -1,4 +1,4 @@
-uuid: c7050321-b934-46de-9800-0c0f7ff4423c
+uuid: 3f30f742-950e-4fcd-a7da-d58d0e9a9422
 langcode: en
 status: true
 dependencies:
@@ -359,6 +359,7 @@ display:
           plugin_id: string
       display_extenders: {  }
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -367,8 +368,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:field.storage.node.body'
   rest_export_1:
@@ -403,6 +402,7 @@ display:
               alias: description
               raw_output: false
     cache_metadata:
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -410,7 +410,5 @@ display:
         - url
         - 'user.node_grants:view'
         - user.permissions
-      cacheable: false
-      max-age: -1
       tags:
         - 'config:field.storage.node.body'
