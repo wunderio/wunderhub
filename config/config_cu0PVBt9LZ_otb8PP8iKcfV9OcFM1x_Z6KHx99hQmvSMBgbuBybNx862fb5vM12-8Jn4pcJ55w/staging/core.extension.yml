@@ -44,6 +44,7 @@ module:
   wkhub_company: 0
   wkhub_person: 0
   wkhub_principle: 0
+  wkhub_search: 0
   wkhub_services: 0
   menu_link_content: 1
   views: 10
