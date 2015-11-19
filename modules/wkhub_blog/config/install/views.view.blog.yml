@@ -1399,6 +1399,14 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       cacheable: false
+      max-age: -1
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_country'
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_intro'
+        - 'config:field.storage.node.field_kicker'
+        - 'config:field.storage.node.field_tags'
   page_1:
     display_plugin: page
     id: page_1
@@ -1416,6 +1424,14 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       cacheable: false
+      max-age: -1
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_country'
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_intro'
+        - 'config:field.storage.node.field_kicker'
+        - 'config:field.storage.node.field_tags'
   rest_export_1:
     display_plugin: rest_export
     id: rest_export_1
@@ -1519,6 +1535,14 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       cacheable: false
+      max-age: -1
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_country'
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_intro'
+        - 'config:field.storage.node.field_kicker'
+        - 'config:field.storage.node.field_tags'
   rest_export_2:
     display_plugin: rest_export
     id: rest_export_2
@@ -1678,3 +1702,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       cacheable: false
+      max-age: -1
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_country'
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_intro'
+        - 'config:field.storage.node.field_kicker'
+        - 'config:field.storage.node.field_tags'
