@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: employee
-label: Employee
-weight: -10
-is_admin: null
-permissions: {  }

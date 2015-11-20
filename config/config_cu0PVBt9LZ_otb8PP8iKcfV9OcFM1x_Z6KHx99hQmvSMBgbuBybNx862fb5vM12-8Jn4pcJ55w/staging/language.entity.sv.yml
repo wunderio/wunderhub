@@ -1,9 +1,0 @@
-uuid: 3fbd4221-c0cc-488d-b81e-300c0288fc80
-langcode: en
-status: true
-dependencies: {  }
-id: sv
-label: Swedish
-direction: ltr
-weight: 7
-locked: false

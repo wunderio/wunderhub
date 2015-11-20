@@ -1,7 +1,0 @@
-services_menus:
-  services: services
-  account: 0
-  admin: 0
-  footer: 0
-  main: 0
-  tools: 0

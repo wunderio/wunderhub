@@ -1,9 +1,0 @@
-uuid: eb204b84-ee36-46eb-876f-969583309e31
-langcode: en
-status: true
-dependencies: {  }
-name: Office
-vid: wk_office
-description: 'Wunderkraut office group'
-hierarchy: 0
-weight: 0

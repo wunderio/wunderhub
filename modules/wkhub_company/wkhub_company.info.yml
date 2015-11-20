@@ -1,9 +1,0 @@
-name: Company
-type: module
-core: '8.x'
-project: 'wkhub_company'
-description: 'Wundersites::Hub: Company and office information.'
-package: Wundersites
-dependencies:
-  - taxonomy
-  - entity_reference

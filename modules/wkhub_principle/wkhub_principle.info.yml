@@ -1,6 +1,0 @@
-name: WunderPrinciple
-type: module
-core: '8.x'
-project: 'wkhub_principle'
-description: 'Wundersites::Hub: WunderPrinciples.'
-package: Wundersites

@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: Group
-vid: wk_group
-description: 'Wunderkraut Group (Legacy)'
-hierarchy: 0
-weight: 0

@@ -1,6 +1,0 @@
-{
-  "name": "drupal/wunderhub",
-  "description": "Install profile for the wunderhub REST API.",
-  "type": "drupal-profile",
-  "license": "GPL-2.0+"
-}
