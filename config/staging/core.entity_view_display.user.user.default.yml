@@ -1,0 +1,94 @@
+uuid: 4db30ce2-6258-48ee-813e-3e0d7f1d7af8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_drupal_org_profile
+    - field.field.user.user.field_github
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_person_email
+    - field.field.user.user.field_person_jobtitle
+    - field.field.user.user.field_person_namefirst
+    - field.field.user.user.field_person_namelast
+    - field.field.user.user.field_person_office
+    - field.field.user.user.field_persongender
+    - field.field.user.user.field_twitter
+    - field.field.user.user.user_picture
+  module:
+    - image
+    - link
+    - text
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_biography:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_drupal_org_profile:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_github:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_linkedin:
+    weight: 10
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_twitter:
+    weight: 9
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  member_for:
+    weight: 5
+  user_picture:
+    type: image
+    weight: 0
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  field_person_email: true
+  field_person_jobtitle: true
+  field_person_namefirst: true
+  field_person_namelast: true
+  field_person_office: true
+  field_persongender: true

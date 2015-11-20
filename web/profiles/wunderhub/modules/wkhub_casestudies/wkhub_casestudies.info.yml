@@ -1,0 +1,12 @@
+name: WunderCaseStudies
+type: module
+core: '8.x'
+project: 'wkhub_casestudies'
+description: 'Wundersites::Hub: Case Studies, includes case studies content types and API.'
+package: Wundersites
+dependencies:
+  - entity_reference
+  - menu_ui
+  - views
+  - wkhub_blog
+  - wkhub_company

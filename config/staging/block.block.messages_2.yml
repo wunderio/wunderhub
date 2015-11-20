@@ -1,0 +1,20 @@
+uuid: 7d8f7924-8158-46e6-be99-923e4e978e8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: messages_2
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

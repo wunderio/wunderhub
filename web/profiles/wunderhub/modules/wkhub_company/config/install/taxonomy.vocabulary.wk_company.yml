@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Company
+vid: wk_company
+description: 'Wunderkraut Corporate Entity'
+hierarchy: 0
+weight: 0

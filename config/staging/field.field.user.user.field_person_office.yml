@@ -1,0 +1,28 @@
+uuid: 0882e6ad-5135-4bf2-a53f-0d370a2d12c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_person_office
+    - taxonomy.vocabulary.wk_office
+  module:
+    - user
+id: user.user.field_person_office
+field_name: field_person_office
+entity_type: user
+bundle: user
+label: 'Place of work'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      wk_office: wk_office
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 9c2217db-6647-4466-84a8-4754ffb90ff1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - services
+    parent: 'services:'
+name: Service
+type: service
+description: 'Details of a specific service offering.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

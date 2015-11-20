@@ -1,0 +1,18 @@
+uuid: 359c7fed-5d1e-4e8f-a502-2b4e79605492
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_office
+id: taxonomy_term.wk_office.name
+field_name: name
+entity_type: taxonomy_term
+bundle: wk_office
+label: Name
+description: 'The term name.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

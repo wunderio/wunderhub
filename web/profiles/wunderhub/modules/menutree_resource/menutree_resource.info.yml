@@ -1,0 +1,6 @@
+name: 'Menu tree API resource'
+type: module
+core: '8.x'
+#project: 'menutree_resource'
+description: 'Wundersites::Hub: provide a menu tree as an REST API endpoint.'
+package: Wundersites

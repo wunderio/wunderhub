@@ -1,0 +1,9 @@
+uuid: 3797a19c-211e-4e6f-aad6-5de92a256e0a
+langcode: en
+status: true
+dependencies: {  }
+name: Company
+vid: wk_company
+description: 'Wunderkraut Corporate Entity'
+hierarchy: 0
+weight: 0

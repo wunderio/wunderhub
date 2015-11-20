@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_office_country
+    - taxonomy.vocabulary.wk_office
+  module:
+    - entity_reference
+id: taxonomy_term.wk_office.field_office_country
+field_name: field_office_country
+entity_type: taxonomy_term
+bundle: wk_office
+label: Country
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      country: country
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

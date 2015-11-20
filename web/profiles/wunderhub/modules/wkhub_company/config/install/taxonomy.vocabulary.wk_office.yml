@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Office
+vid: wk_office
+description: 'Wunderkraut office group'
+hierarchy: 0
+weight: 0
