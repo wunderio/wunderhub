@@ -1,0 +1,22 @@
+uuid: 6eca0719-c248-4249-a409-9fc970786809
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.service_area
+id: node.service_area.status
+field_name: status
+entity_type: node
+bundle: service_area
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

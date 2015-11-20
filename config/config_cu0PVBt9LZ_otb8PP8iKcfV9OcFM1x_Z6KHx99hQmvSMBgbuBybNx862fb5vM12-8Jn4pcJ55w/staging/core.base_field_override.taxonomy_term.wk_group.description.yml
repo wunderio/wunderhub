@@ -1,0 +1,20 @@
+uuid: 5cafb914-ea46-4c34-ab00-ba79d31a4808
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_group
+  module:
+    - text
+id: taxonomy_term.wk_group.description
+field_name: description
+entity_type: taxonomy_term
+bundle: wk_group
+label: Description
+description: 'A description of the term.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

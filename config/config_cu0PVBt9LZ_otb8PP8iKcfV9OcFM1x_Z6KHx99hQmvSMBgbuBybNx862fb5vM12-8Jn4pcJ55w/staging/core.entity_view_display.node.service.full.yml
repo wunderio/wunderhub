@@ -61,3 +61,4 @@ content:
 hidden:
   field_country: true
   field_service_area: true
+  langcode: true

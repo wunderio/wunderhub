@@ -59,3 +59,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_country: true
+  langcode: true

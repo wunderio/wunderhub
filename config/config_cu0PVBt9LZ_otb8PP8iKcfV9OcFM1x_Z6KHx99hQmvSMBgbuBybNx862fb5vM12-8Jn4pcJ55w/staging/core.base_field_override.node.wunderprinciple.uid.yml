@@ -1,0 +1,20 @@
+uuid: 9af38f57-eef7-46c3-b331-49a39672e117
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wunderprinciple
+id: node.wunderprinciple.uid
+field_name: uid
+entity_type: node
+bundle: wunderprinciple
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

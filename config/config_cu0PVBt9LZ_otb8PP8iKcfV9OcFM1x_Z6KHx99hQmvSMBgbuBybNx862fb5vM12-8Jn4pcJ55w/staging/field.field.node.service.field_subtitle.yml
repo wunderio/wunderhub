@@ -12,7 +12,7 @@ bundle: service
 label: Subtitle
 description: 'A short sub heading that is displayed after the main title on teasers and promo listings.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

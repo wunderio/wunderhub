@@ -32,3 +32,4 @@ hidden:
   field_image: true
   field_intro: true
   field_kicker: true
+  langcode: true

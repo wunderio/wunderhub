@@ -25,4 +25,5 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-hidden: {  }
+hidden:
+  langcode: true
