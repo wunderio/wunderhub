@@ -1,0 +1,20 @@
+uuid: a88fcce4-3351-42cd-ae51-814527c3d23d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.case_study
+  module:
+    - path
+id: node.case_study.path
+field_name: path
+entity_type: node
+bundle: case_study
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

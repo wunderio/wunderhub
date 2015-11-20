@@ -1,0 +1,22 @@
+uuid: 1dda9d5f-f5cf-43c4-9200-d9ae713530fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.case_study
+id: node.case_study.status
+field_name: status
+entity_type: node
+bundle: case_study
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

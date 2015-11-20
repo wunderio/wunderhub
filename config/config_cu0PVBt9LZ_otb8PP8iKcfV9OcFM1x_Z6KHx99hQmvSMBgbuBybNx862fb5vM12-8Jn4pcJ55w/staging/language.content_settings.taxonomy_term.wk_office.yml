@@ -1,0 +1,16 @@
+uuid: d9cd7983-60f5-4a63-a921-336c69de4022
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_office
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.wk_office
+target_entity_type_id: taxonomy_term
+target_bundle: wk_office
+default_langcode: site_default
+language_alterable: false

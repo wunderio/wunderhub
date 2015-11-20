@@ -22,6 +22,7 @@ module:
   history: 0
   image: 0
   image_raw_formatter: 0
+  language: 0
   link: 0
   menu_ui: 0
   menutree_resource: 0
@@ -48,6 +49,7 @@ module:
   wkhub_search: 0
   wkhub_services: 0
   menu_link_content: 1
+  content_translation: 10
   views: 10
   wk: 1000
 theme:

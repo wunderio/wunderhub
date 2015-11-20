@@ -1,0 +1,22 @@
+uuid: 30ef4296-0f55-4f54-8c02-2f9f46b570c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wunderprinciple
+id: node.wunderprinciple.sticky
+field_name: sticky
+entity_type: node
+bundle: wunderprinciple
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

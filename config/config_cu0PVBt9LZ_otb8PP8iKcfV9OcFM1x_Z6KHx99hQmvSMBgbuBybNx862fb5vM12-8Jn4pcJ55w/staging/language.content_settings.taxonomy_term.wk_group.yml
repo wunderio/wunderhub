@@ -1,0 +1,16 @@
+uuid: 6060e6eb-cb9c-430a-b80f-15fab51b36fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wk_group
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.wk_group
+target_entity_type_id: taxonomy_term
+target_bundle: wk_group
+default_langcode: site_default
+language_alterable: false

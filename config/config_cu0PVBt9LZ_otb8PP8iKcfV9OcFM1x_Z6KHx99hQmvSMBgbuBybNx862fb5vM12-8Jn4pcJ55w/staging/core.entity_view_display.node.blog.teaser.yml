@@ -39,4 +39,5 @@ hidden:
   field_country: true
   field_kicker: true
   field_tags: true
+  langcode: true
   links: true
