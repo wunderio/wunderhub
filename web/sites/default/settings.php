@@ -6,8 +6,8 @@
  */
 // You should modify the hash_salt so that it is specific to your application.
 $settings['hash_salt'] = '';
-if (isset($_SERVER['WUNDERHUB_HASH_SALT'])) {
-  $settings['hash_salt'] = file_get_contents($_SERVER['WUNDERHUB_HASH_SALT']);
+if (isset($_SERVER["WUNDERHUB_HASH_SALT"])) {
+  $settings['hash_salt'] = file_get_contents($_SERVER["WUNDERHUB_HASH_SALT"]);
 }
 /**
  * Default Drupal 8 settings.
@@ -25,10 +25,10 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 $config_directories = array();
 // Paths for config files
-if (isset($_SERVER['WUNDERHUB_DIR'])) {
+if (isset($_SERVER["WUNDERHUB_DIR"])) {
   $config_directories = array(
-    'active' => $_SERVER['WUNDERHUB_DIR'] . '/config/active',
-    'staging' => $_SERVER['WUNDERHUB_DIR'] . '/config/staging',
+    'active' => $_SERVER["WUNDERHUB_DIR"] . '/config/active',
+    'staging' => $_SERVER["WUNDERHUB_DIR"] . '/config/staging',
   );
 }
 // Include Database, trusted host and other environment-specific settings in
