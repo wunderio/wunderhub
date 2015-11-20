@@ -60,7 +60,7 @@ class WkHubPrincipleController extends ControllerBase {
       // Get a random item from the array of principles
       $k = array_rand($principles);
       $principle = $principles[$k];
-      $title = Xss::filter($principle['title']);
+      $title = Xss::filter($principle->title);
     }
     $build = array(
       '#type' => 'markup',
