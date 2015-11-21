@@ -9,7 +9,7 @@ dependencies:
 id: messages_2
 theme: bartik
 region: content
-weight: -5
+weight: -4
 provider: null
 plugin: system_messages_block
 settings:

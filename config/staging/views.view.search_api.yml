@@ -1582,7 +1582,7 @@ display:
           plugin_id: string
         type:
           id: type
-          table: node
+          table: node_field_data
           field: type
           relationship: none
           group_type: group

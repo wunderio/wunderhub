@@ -2082,7 +2082,7 @@ display:
       arguments:
         uid:
           id: uid
-          table: users
+          table: users_field_data
           field: uid
           relationship: none
           group_type: group
