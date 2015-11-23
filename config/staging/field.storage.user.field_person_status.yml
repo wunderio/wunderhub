@@ -1,0 +1,48 @@
+uuid: 87fbd37c-5d05-443a-920c-1227634b7057
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_person_status
+field_name: field_person_status
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: client
+      label: 'Client work'
+    -
+      value: bench
+      label: 'On the bench'
+    -
+      value: internal
+      label: 'Internal work'
+    -
+      value: conference
+      label: 'Attending a conference'
+    -
+      value: holiday
+      label: 'On holiday'
+    -
+      value: sick
+      label: 'Off sick'
+    -
+      value: wk_office
+      label: 'In the office'
+    -
+      value: client_office
+      label: 'At a client office'
+    -
+      value: meeting
+      label: 'In a meeting'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -14,6 +14,7 @@ dependencies:
     - field.storage.user.field_person_namelast
     - field.storage.user.field_person_office
     - field.storage.user.field_person_skills
+    - field.storage.user.field_person_status
     - field.storage.user.field_twitter
     - field.storage.user.user_picture
     - taxonomy.vocabulary.country
@@ -22,6 +23,7 @@ dependencies:
     - entity_reference_revisions
     - image_raw_formatter
     - link
+    - options
     - rest
     - taxonomy
     - text
@@ -1729,6 +1731,130 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_person_status:
+          id: field_person_status
+          table: user__field_person_status
+          field: field_person_status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_person_status_1:
+          id: field_person_status_1
+          table: user__field_person_status
+          field: field_person_status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_key
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       filters:
         status:
           value: true
@@ -1958,6 +2084,47 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
+        field_person_status_value:
+          id: field_person_status_value
+          table: user__field_person_status
+          field: field_person_status_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_person_status_value_op
+            label: Status
+            description: ''
+            use_operator: false
+            operator: field_person_status_value_op
+            identifier: status
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              employee: '0'
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
       sorts:
         field_office_country_target_id:
           id: field_office_country_target_id
@@ -2023,6 +2190,7 @@ display:
         - 'config:field.storage.user.field_person_namelast'
         - 'config:field.storage.user.field_person_office'
         - 'config:field.storage.user.field_person_skills'
+        - 'config:field.storage.user.field_person_status'
         - 'config:field.storage.user.field_twitter'
         - 'config:field.storage.user.user_picture'
   rest_export_1:
@@ -2112,6 +2280,12 @@ display:
             field_person_skills:
               alias: skills
               raw_output: false
+            field_person_status:
+              alias: status
+              raw_output: false
+            field_person_status_1:
+              alias: status_key
+              raw_output: false
       display_description: ''
       pager:
         type: none
@@ -2138,6 +2312,7 @@ display:
         - 'config:field.storage.user.field_person_namelast'
         - 'config:field.storage.user.field_person_office'
         - 'config:field.storage.user.field_person_skills'
+        - 'config:field.storage.user.field_person_status'
         - 'config:field.storage.user.field_twitter'
         - 'config:field.storage.user.user_picture'
   rest_export_2:
@@ -2280,6 +2455,12 @@ display:
             field_person_skills:
               alias: skills
               raw_output: false
+            field_person_status:
+              alias: status
+              raw_output: false
+            field_person_status_1:
+              alias: status_key
+              raw_output: false
       filters:
         status:
           value: true
@@ -2395,5 +2576,6 @@ display:
         - 'config:field.storage.user.field_person_namelast'
         - 'config:field.storage.user.field_person_office'
         - 'config:field.storage.user.field_person_skills'
+        - 'config:field.storage.user.field_person_status'
         - 'config:field.storage.user.field_twitter'
         - 'config:field.storage.user.user_picture'
