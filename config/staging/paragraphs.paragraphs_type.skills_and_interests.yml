@@ -1,0 +1,6 @@
+uuid: c6f6dfe2-3e8a-4658-aa09-9c0e3fb1e75b
+langcode: en
+status: true
+dependencies: {  }
+id: skills_and_interests
+label: 'Skills and interests'

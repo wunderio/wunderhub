@@ -1,0 +1,29 @@
+uuid: 35830cd6-1927-4661-9403-3c98fdca5a73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.skills_and_interests.field_skill_level
+    - field.field.paragraph.skills_and_interests.field_skills_and_interests
+    - paragraphs.paragraphs_type.skills_and_interests
+id: paragraph.skills_and_interests.default
+targetEntityType: paragraph
+bundle: skills_and_interests
+mode: default
+content:
+  field_skill_level:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_skills_and_interests:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+hidden:
+  created: true
+  uid: true

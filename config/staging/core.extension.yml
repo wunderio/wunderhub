@@ -12,6 +12,7 @@ module:
   dblog: 0
   editor: 0
   entity_reference: 0
+  entity_reference_revisions: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -28,6 +29,7 @@ module:
   menutree_resource: 0
   node: 0
   options: 0
+  paragraphs: 0
   path: 0
   rdf: 0
   rest: 0

@@ -12,10 +12,12 @@ dependencies:
     - field.field.user.user.field_person_namefirst
     - field.field.user.user.field_person_namelast
     - field.field.user.user.field_person_office
+    - field.field.user.user.field_person_skills
     - field.field.user.user.field_persongender
     - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
   module:
+    - entity_reference_revisions
     - image
     - link
     - text
@@ -64,6 +66,14 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+  field_person_skills:
+    type: entity_reference_revisions_entity_view
+    weight: 11
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_twitter:
     weight: 9
     label: above
