@@ -1,0 +1,21 @@
+uuid: f63ff9fe-5596-4f0a-b100-bb61f99e8b3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_skill_level
+    - paragraphs.paragraphs_type.skills_and_interests
+  module:
+    - options
+id: paragraph.skills_and_interests.field_skill_level
+field_name: field_skill_level
+entity_type: paragraph
+bundle: skills_and_interests
+label: Level
+description: 'Approximate skill level'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,27 @@
+uuid: a45cebb6-1007-4362-8400-e3ce1d1853f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_skills_and_interests
+    - paragraphs.paragraphs_type.skills_and_interests
+    - taxonomy.vocabulary.skills_and_interests
+id: paragraph.skills_and_interests.field_skills_and_interests
+field_name: field_skills_and_interests
+entity_type: paragraph
+bundle: skills_and_interests
+label: 'Skill or interest'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      skills_and_interests: skills_and_interests
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

@@ -1,0 +1,41 @@
+uuid: 3cd4b277-497d-4da8-be3d-618d254bc729
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.skills_and_interests
+  module:
+    - path
+    - text
+id: taxonomy_term.skills_and_interests.default
+targetEntityType: taxonomy_term
+bundle: skills_and_interests
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 10
+hidden: {  }

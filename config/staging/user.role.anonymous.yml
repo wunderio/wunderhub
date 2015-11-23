@@ -14,3 +14,5 @@ permissions:
   - 'access site-wide contact form'
   - 'restful get entity:node'
   - 'access user profiles'
+  - 'access rest_api_doc'
+  - 'restful get root'

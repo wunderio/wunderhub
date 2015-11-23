@@ -1,0 +1,36 @@
+uuid: 7b7d5b46-8db0-4b10-8100-c50b21d6262b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_skill_level
+field_name: field_skill_level
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: novice
+      label: Novice
+    -
+      value: apprentice
+      label: Apprentice
+    -
+      value: practitioner
+      label: Practitioner
+    -
+      value: expert
+      label: Expert
+    -
+      value: master
+      label: 'Jedi Master'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

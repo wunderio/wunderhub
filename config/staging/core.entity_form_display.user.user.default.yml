@@ -12,6 +12,7 @@ dependencies:
     - field.field.user.user.field_person_namefirst
     - field.field.user.user.field_person_namelast
     - field.field.user.user.field_person_office
+    - field.field.user.user.field_person_skills
     - field.field.user.user.field_persongender
     - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
@@ -19,6 +20,7 @@ dependencies:
     - field_group
     - image
     - link
+    - paragraphs
     - text
     - user
 third_party_settings:
@@ -109,6 +111,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+  field_person_skills:
+    type: entity_reference_paragraphs
+    weight: 18
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
   field_persongender:
     weight: 3
     settings: {  }
@@ -129,6 +141,8 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  translation:
+    weight: 10
   user_picture:
     type: image_image
     settings:

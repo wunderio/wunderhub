@@ -1,0 +1,21 @@
+uuid: eb8267c1-ad64-4ae2-a002-2ad00b3b4d61
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.skills_and_interests
+  module:
+    - text
+id: taxonomy_term.skills_and_interests.default
+targetEntityType: taxonomy_term
+bundle: skills_and_interests
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

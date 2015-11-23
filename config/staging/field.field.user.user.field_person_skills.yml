@@ -1,0 +1,23 @@
+uuid: bac9d1de-efa6-4ba7-9e00-b6bb3bbd1a91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_person_skills
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_person_skills
+field_name: field_person_skills
+entity_type: user
+bundle: user
+label: 'Skills and interests'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

@@ -1,0 +1,9 @@
+uuid: 0db32c57-ae23-4298-a71b-27ec40baa3e4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Skills and interests'
+vid: skills_and_interests
+description: 'Staff skills and interests, with weights'
+hierarchy: 0
+weight: 0
