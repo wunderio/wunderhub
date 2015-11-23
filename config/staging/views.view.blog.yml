@@ -86,6 +86,7 @@ display:
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       fields:
         nid:
@@ -1491,11 +1492,11 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: language
-        uid:
-          id: uid
-          table: users
-          field: uid
-          relationship: uid
+        uid_raw:
+          id: uid_raw
+          table: users_field_data
+          field: uid_raw
+          relationship: uid_2
           group_type: group
           admin_label: ''
           operator: '='
@@ -1506,11 +1507,11 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: uid_op
-            label: 'User ID'
+            operator_id: uid_raw_op
+            label: Author
             description: ''
             use_operator: false
-            operator: uid_op
+            operator: uid_raw_op
             identifier: uid
             required: false
             remember: false
@@ -1533,7 +1534,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: user
-          entity_field: uid
           plugin_id: numeric
         name:
           id: name
@@ -1542,7 +1542,7 @@ display:
           relationship: field_country
           group_type: group
           admin_label: ''
-          operator: '='
+          operator: word
           value: ''
           group: 1
           exposed: true
@@ -1588,6 +1588,47 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: string
+        name_1:
+          id: name_1
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_tags
+          group_type: group
+          admin_label: ''
+          operator: word
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_1_op
+            label: Tags
+            description: ''
+            use_operator: false
+            operator: name_1_op
+            identifier: tags
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              employee: '0'
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: string
       sorts:
         created:
           id: created
@@ -1605,18 +1646,28 @@ display:
             label: ''
           granularity: second
       title: Blog
-      header: {  }
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: '@total'
+          plugin_id: result
       footer: {  }
       empty: {  }
       relationships:
-        uid:
-          id: uid
+        uid_2:
+          id: uid_2
           table: node_field_data
           field: uid
           relationship: none
           group_type: group
           admin_label: author
-          required: true
+          required: false
           entity_type: node
           entity_field: uid
           plugin_id: standard
@@ -1627,6 +1678,15 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_country: Taxonomy term'
+          required: false
+          plugin_id: standard
+        field_tags:
+          id: field_tags
+          table: node__field_tags
+          field: field_tags
+          relationship: none
+          group_type: group
+          admin_label: 'field_tags: Taxonomy term'
           required: false
           plugin_id: standard
       arguments: {  }

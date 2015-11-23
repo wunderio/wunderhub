@@ -13,7 +13,7 @@ bundle: wk_group
 label: Description
 description: 'A description of the term.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
