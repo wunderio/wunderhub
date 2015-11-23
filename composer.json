@@ -28,7 +28,8 @@
         "drupal/field_group": "8.1.0-rc3",
         "drupal/restui": "8.1.10",
         "drupal/devel": "8.1.*@dev",
-        "drupal/config_devel": "8.1.0-beta16"
+        "drupal/config_devel": "8.1.0-beta16",
+        "drupal/paragraphs": "8.1.0-rc4"
     },
     "require-dev": {
         "behat/mink": "~1.6",
