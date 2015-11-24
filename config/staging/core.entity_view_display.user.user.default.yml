@@ -13,6 +13,7 @@ dependencies:
     - field.field.user.user.field_person_namelast
     - field.field.user.user.field_person_office
     - field.field.user.user.field_person_skills
+    - field.field.user.user.field_person_status
     - field.field.user.user.field_persongender
     - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
@@ -20,6 +21,7 @@ dependencies:
     - entity_reference_revisions
     - image
     - link
+    - options
     - text
     - user
 id: user.user.default
@@ -74,6 +76,12 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+  field_person_status:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   field_twitter:
     weight: 9
     label: above

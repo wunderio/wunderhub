@@ -13,6 +13,7 @@ dependencies:
     - field.field.user.user.field_person_namelast
     - field.field.user.user.field_person_office
     - field.field.user.user.field_person_skills
+    - field.field.user.user.field_person_status
     - field.field.user.user.field_persongender
     - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
@@ -121,6 +122,11 @@ content:
       add_mode: dropdown
       form_display_mode: default
     third_party_settings: {  }
+  field_person_status:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
   field_persongender:
     weight: 3
     settings: {  }
@@ -143,6 +149,8 @@ content:
     third_party_settings: {  }
   translation:
     weight: 10
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
