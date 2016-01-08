@@ -1,0 +1,23 @@
+always_save_userinfo: true
+user_pictures: true
+userinfo_mappings:
+  timezone: zoneinfo
+  content_translation_source: 0
+  content_translation_outdated: 0
+  content_translation_uid: 0
+  content_translation_status: 0
+  content_translation_created: 0
+  field_biography: 0
+  field_drupal_org_profile: 0
+  field_github: 0
+  field_linkedin: 0
+  field_persongender: 0
+  field_person_email: 0
+  field_person_jobtitle: 0
+  field_person_namefirst: 0
+  field_person_namelast: 0
+  field_person_office: 0
+  field_person_skills: 0
+  field_person_status: 0
+  field_twitter: 0
+  user_picture: 0

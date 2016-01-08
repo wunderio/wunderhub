@@ -1,0 +1,28 @@
+uuid: ff9ed3a2-0550-4185-9100-afc2cdc67289
+langcode: en
+status: true
+dependencies:
+  module:
+    - openid_connect
+    - user
+  theme:
+    - bartik
+id: openidconnectlogin
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: openid_connect_login
+settings:
+  id: openid_connect_login
+  label: 'OpenID Connect login'
+  provider: openid_connect
+  label_display: visible
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
