@@ -56,3 +56,7 @@ Thumbs.db
 *.tag.gz
 *.tgz
 *.zip
+
+# Extra files #
+###############
+config/staging/openid_connect.settings.google.yml
