@@ -6,4 +6,6 @@ id: employee
 label: Employee
 weight: -10
 is_admin: null
-permissions: {  }
+permissions:
+  - 'openid connect set own password'
+  - 'manage own openid connect accounts'

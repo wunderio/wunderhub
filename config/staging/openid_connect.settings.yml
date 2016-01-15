@@ -1,5 +1,5 @@
 always_save_userinfo: true
-user_pictures: true
+user_pictures: false
 userinfo_mappings:
   timezone: zoneinfo
   content_translation_source: 0
