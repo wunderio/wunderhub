@@ -1,14 +1,16 @@
 uuid: 5ded811c-4c5a-4334-bd08-8b1619234fb5
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: square
 label: 'Square (300)'
 effects:
-  b0b893e7-5fe9-4ea1-ad00-cb9e6f968665:
-    uuid: b0b893e7-5fe9-4ea1-ad00-cb9e6f968665
-    id: image_scale_and_crop
+  d6c4a756-83ed-40bb-8502-2a3cb494111f:
+    uuid: d6c4a756-83ed-40bb-8502-2a3cb494111f
+    id: focal_point_scale_and_crop
     weight: 1
     data:
-      width: 300
-      height: 300
+      width: '300'
+      height: '300'
