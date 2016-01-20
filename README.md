@@ -1,13 +1,11 @@
-# Composer template for Drupal projects
+# WunderHub
 
-[![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
+## Wunder Setup
 
-This project template should provide a kickstart for managing your site
-dependencies with [Composer](https://getcomposer.org/).
-
-If you want to know how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.md) visit
-the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
+1. ```git clone git@github.com:wunderkraut/wunderhub.git```
+2. ```cd wunderhub```
+3. ```composer install```
+4. Point your web server to the web directory.
 
 ## Usage
 
