@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8353c2fb602a8f54564be8c2f8e692e2",
-    "content-hash": "42917c5f24de8bc58a91dbac952c1800",
+    "hash": "3078fb3807ceda17638df33e536ff715",
+    "content-hash": "1d42258d19e79ba8a1d9b47c2c1d1396",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -228,6 +228,50 @@
                 "versioning"
             ],
             "time": "2015-11-10 11:17:42"
+        },
+        {
+            "name": "cweagans/composer-patches",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "1d50068f48f1a727c9baf96ae48959f3d3428a77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/1d50068f48f1a727c9baf96ae48959f3d3428a77",
+                "reference": "1d50068f48f1a727c9baf96ae48959f3d3428a77",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "time": "2015-07-09 18:27:46"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -701,7 +745,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/e76fb9c1a6e8795ced364cfccd326d07f04184f9",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/eaeb48a7ff0fbb540158ba844da10ee59d3515f2",
                 "reference": "e76fb9c1a6e8795ced364cfccd326d07f04184f9",
                 "shasum": ""
             },
@@ -1097,6 +1141,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "Admin users can't create keys to other users": "https://www.drupal.org/files/issues/oauth-admin-2627994-35.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -4577,7 +4624,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jcalderonzumba/gastonjs/zipball/5e231b4df98275c404e1371fc5fadd34f6a121ad",
+                "url": "https://api.github.com/repos/jcalderonzumba/gastonjs/zipball/21bebb8ca03eb0f93ec2f3fad61192fb079e2622",
                 "reference": "5e231b4df98275c404e1371fc5fadd34f6a121ad",
                 "shasum": ""
             },
