@@ -1,0 +1,12 @@
+.openid-connect-login-form .button {
+  background: none;
+  border: 1px solid #ea4335;
+  color: #ea4335;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.openid-connect-login-form .button:hover,
+.openid-connect-login-form .button:focus {
+  background: #ea4335;
+  color: #fff;
+}

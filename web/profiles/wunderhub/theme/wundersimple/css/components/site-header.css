@@ -1,0 +1,17 @@
+.site-header {
+  display: flex;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.site-header__primary {
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+}
+.site-header__secondary {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

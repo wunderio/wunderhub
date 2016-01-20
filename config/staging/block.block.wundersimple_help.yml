@@ -1,0 +1,20 @@
+uuid: efba3847-96fd-4e3f-8f51-814a9be06861
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - wundersimple
+id: wundersimple_help
+theme: wundersimple
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

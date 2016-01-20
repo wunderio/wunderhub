@@ -1,0 +1,18 @@
+uuid: 4e688967-8859-40aa-ba02-2c00d91502e4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wundersimple
+id: wundersimple_local_actions
+theme: wundersimple
+region: content
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
