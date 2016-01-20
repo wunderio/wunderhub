@@ -28,6 +28,7 @@ module:
   menu_ui: 0
   menutree_resource: 0
   node: 0
+  oauth: 0
   openid_connect: 0
   options: 0
   paragraphs: 0
