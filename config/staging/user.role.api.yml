@@ -7,19 +7,10 @@ label: API
 weight: -6
 is_admin: null
 permissions:
-  0: 'create article content'
-  1: 'edit any article content'
-  2: 'edit own article content'
   3: 'access own consumers'
-  5: 'restful patch entity:node'
-  6: 'restful post entity:node'
-  7: 'restful delete entity:node'
-  8: 'restful get menutree'
   9: 'view all revisions'
   10: 'view own unpublished content'
   11: 'access content'
   13: 'restful patch entity:user'
-  14: 'restful delete entity:user'
-  15: 'restful post entity:user'
   16: 'restful get entity:node'
   17: 'restful get entity:user'

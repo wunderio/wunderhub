@@ -34,14 +34,11 @@ resources:
   'entity:user':
     GET:
       supported_formats:
-        - hal_json
         - json
-        - xml
       supported_auth:
         - oauth
     PATCH:
       supported_formats:
-        - hal_json
         - json
       supported_auth:
         - oauth
