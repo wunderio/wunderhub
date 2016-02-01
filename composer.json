@@ -36,7 +36,7 @@
         "drupal/config_devel": "8.1.0-beta16",
         "drupal/paragraphs": "8.1.0-rc4",
         "drupal/simple_oauth": "8.1.0-beta2",
-        "drupal/oauth": "8.1.2",
+        "drupal/oauth": "^8.2",
         "google/apiclient": "^2.0.0@RC",
         "drupal/openid_connect": "dev-feature/support_google_client_hosted_domain_hd"
     },
@@ -63,9 +63,6 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {
-            "drupal/oauth": {
-                "Admin users can't create keys to other users": "https://www.drupal.org/files/issues/oauth-admin-2627994-35.patch"
-            }
         }
     }
 }

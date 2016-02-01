@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3078fb3807ceda17638df33e536ff715",
-    "content-hash": "1d42258d19e79ba8a1d9b47c2c1d1396",
+    "hash": "14e3d014023461348c6c3601790af47a",
+    "content-hash": "017241b63328b6e309adf61ef213e92c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -709,7 +709,7 @@
             "version": "8.1.0-beta16",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/config_devel",
+                "url": "https://git.drupal.org/project/config_devel",
                 "reference": "41b1d0ce1d324e586699aa1f8f9230c115eb75be"
             },
             "dist": {
@@ -745,7 +745,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/eaeb48a7ff0fbb540158ba844da10ee59d3515f2",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/46383aaa7d6d9dfdc25ba03d547a3913e4df947d",
                 "reference": "e76fb9c1a6e8795ced364cfccd326d07f04184f9",
                 "shasum": ""
             },
@@ -989,7 +989,7 @@
             "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/devel",
+                "url": "https://git.drupal.org/project/devel",
                 "reference": "c0b5c5f9a8ec688459e7cd03eb6b1008a9d5a194"
             },
             "require": {
@@ -1032,7 +1032,7 @@
             "version": "8.1.0-rc4",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/entity_reference_revisions.git",
+                "url": "https://git.drupal.org/project/entity_reference_revisions.git",
                 "reference": "6a811cd957fa3cd0f22ac9a9f788fae1fd79d520"
             },
             "dist": {
@@ -1059,7 +1059,7 @@
             "version": "8.1.0-rc4",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/field_group",
+                "url": "https://git.drupal.org/project/field_group",
                 "reference": "54354bfa0c7736ee2c9f6a289dba8aa03c059aaf"
             },
             "dist": {
@@ -1122,15 +1122,15 @@
         },
         {
             "name": "drupal/oauth",
-            "version": "8.1.2",
+            "version": "8.2.0",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/oauth",
-                "reference": "9c4b730d83a9b2b6fb1a487ea68fe519a755a2b5"
+                "url": "https://git.drupal.org/project/oauth",
+                "reference": "8f74649b16613f75d37f33063ef80191d5a54216"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/oauth-8.x-1.2.zip",
+                "url": "https://ftp.drupal.org/files/projects/oauth-8.x-2.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1140,10 +1140,7 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": {
-                    "Admin users can't create keys to other users": "https://www.drupal.org/files/issues/oauth-admin-2627994-35.patch"
+                    "dev-8.x-2.x": "8.2.x-dev"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1178,7 +1175,7 @@
             "version": "8.1.0-rc4",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/paragraphs",
+                "url": "https://git.drupal.org/project/paragraphs",
                 "reference": "740874bacb56a6a90683e7818c06ba77a638125c"
             },
             "dist": {
@@ -1220,7 +1217,7 @@
             "version": "8.1.11",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/restui",
+                "url": "https://git.drupal.org/project/restui",
                 "reference": "b32b5f8bf16b91fd1c65acbb61e82db7b706e127"
             },
             "dist": {
@@ -1248,7 +1245,7 @@
             "version": "8.1.0-beta2",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/simple_oauth.git",
+                "url": "https://git.drupal.org/project/simple_oauth.git",
                 "reference": "5bdea22f24ef157431eded7ce292553843d0fb89"
             },
             "dist": {
@@ -1280,7 +1277,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/30f88b2aa2f4b2bc831fd90b33ef4085eb02429a",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/86de4b6c93a8f401cf18b56c0593a00e40de68ba",
                 "reference": "30f88b2aa2f4b2bc831fd90b33ef4085eb02429a",
                 "shasum": ""
             },
@@ -2288,12 +2285,12 @@
             "version": "1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/RobLoach/Console_Table.git",
-                "reference": "10d89fbbe533351dcfe5dc1e84de25d9a8395950"
+                "url": "https://github.com/pear/Console_Table.git",
+                "reference": "a129a91d8bf19317d81e68d1d3a2e18932f684e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobLoach/Console_Table/zipball/10d89fbbe533351dcfe5dc1e84de25d9a8395950",
+                "url": "https://api.github.com/repos/pear/Console_Table/zipball/a129a91d8bf19317d81e68d1d3a2e18932f684e4",
                 "reference": "10d89fbbe533351dcfe5dc1e84de25d9a8395950",
                 "shasum": ""
             },
