@@ -11,6 +11,7 @@ url:
     nl: nl
     fr: fr
     sv: sv
+    '': null
   domains:
     en: ''
     de: ''

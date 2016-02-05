@@ -9,3 +9,4 @@ is_admin: null
 permissions:
   - 'openid connect set own password'
   - 'manage own openid connect accounts'
+  - 'access toolbar'

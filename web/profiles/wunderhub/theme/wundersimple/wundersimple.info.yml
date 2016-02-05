@@ -1,0 +1,17 @@
+name: Wunder Simple
+type: theme
+base theme: stable
+description: 'A simple theme in the wunder brand.'
+package: Core
+version: VERSION
+core: 8.x
+libraries:
+ - wundersimple/global-styling
+regions:
+  header: 'Header'
+  header_secondary: 'Header Secondary'
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+regions_hidden:
+  - sidebar_first
