@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8353c2fb602a8f54564be8c2f8e692e2",
-    "content-hash": "42917c5f24de8bc58a91dbac952c1800",
+    "hash": "64efa1cc925c9e4312e8c857ef0d0ba2",
+    "content-hash": "68d548ca01aab75c173f4b929e857a43",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -701,7 +701,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/e76fb9c1a6e8795ced364cfccd326d07f04184f9",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/eaeb48a7ff0fbb540158ba844da10ee59d3515f2",
                 "reference": "e76fb9c1a6e8795ced364cfccd326d07f04184f9",
                 "shasum": ""
             },
@@ -1047,6 +1047,29 @@
             "description": "Provides the ability to group your fields on both form and display.",
             "homepage": "https://www.drupal.org/project/field_group",
             "time": "2015-12-10 12:36:16"
+        },
+        {
+            "name": "drupal/focal_point",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/focal_point",
+                "reference": "3095c52246e3a45c708649d07dafe0505acb0659"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/image": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Allows users to specify the focal point of an image for use during cropping.",
+            "homepage": "https://www.drupal.org/project/focal_point",
+            "time": "2015-11-13 23:03:36"
         },
         {
             "name": "drupal/image_raw_formatter",
@@ -4577,7 +4600,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jcalderonzumba/gastonjs/zipball/5e231b4df98275c404e1371fc5fadd34f6a121ad",
+                "url": "https://api.github.com/repos/jcalderonzumba/gastonjs/zipball/21bebb8ca03eb0f93ec2f3fad61192fb079e2622",
                 "reference": "5e231b4df98275c404e1371fc5fadd34f6a121ad",
                 "shasum": ""
             },
@@ -5646,6 +5669,7 @@
         "drupal/devel": 20,
         "google/apiclient": 5,
         "drupal/openid_connect": 20,
+        "drupal/focal_point": 20,
         "jcalderonzumba/gastonjs": 20,
         "jcalderonzumba/mink-phantomjs-driver": 20
     },
