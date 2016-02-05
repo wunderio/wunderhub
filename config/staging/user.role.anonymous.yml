@@ -16,3 +16,4 @@ permissions:
   - 'access user profiles'
   - 'access rest_api_doc'
   - 'restful get root'
+  - 'search content'
