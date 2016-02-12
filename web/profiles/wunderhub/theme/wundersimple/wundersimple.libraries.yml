@@ -1,0 +1,13 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/base/elements.css: {}
+      css/base/typography.css: {}
+      css/base/print.css: {}
+    component:
+      css/components/button.css: {}
+      css/components/logo.css: {}
+      css/components/site-header.css: {}
+      css/components/openid-connect.css: {}
+

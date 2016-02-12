@@ -1,0 +1,20 @@
+uuid: e7fb32fd-87ea-4660-bd00-a9a77ffeee0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wundersimple
+id: wundersimple_messages_2
+theme: wundersimple
+region: content
+weight: -1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

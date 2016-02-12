@@ -1,0 +1,28 @@
+uuid: 76705a9e-2252-4773-b900-d5e57bf18193
+langcode: en
+status: true
+dependencies:
+  module:
+    - openid_connect
+    - user
+  theme:
+    - wundersimple
+id: wundersimple_openidconnectlogin
+theme: wundersimple
+region: header_secondary
+weight: -2
+provider: null
+plugin: openid_connect_login
+settings:
+  id: openid_connect_login
+  label: 'OpenID Connect login'
+  provider: openid_connect
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

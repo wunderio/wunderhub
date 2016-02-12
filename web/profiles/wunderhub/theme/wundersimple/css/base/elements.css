@@ -1,0 +1,116 @@
+body {
+  font-family: 'museo-slab', Helvetica, Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #3C454A;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  font-weight: 300;
+}
+a {
+  color: #E56716;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  margin: 40px 0;
+  font-size: 35px;
+  line-height: 35px;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-weight: 800;
+}
+@media (min-width: 800px) {
+  h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+}
+h2 {
+  margin: 30px 0 10px 0;
+  font-size: 40px;
+  line-height: 48px;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 800;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+.blockquote-cite + h2 {
+  margin-top: 0;
+}
+p {
+  margin: 0;
+  margin-bottom: 22px;
+  margin-bottom: 2.2rem;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+p[max-width~="800px"] {
+  font-size: 14px;
+  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+blockquote {
+  margin: 40px auto 20px;
+  color: #E56716;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  font-family: 'museo-slab',Helvetica,Arial;
+  font-weight: 500;
+  position: relative;
+  font-style: italic;
+  max-width: 1160px;
+  padding: 60px 0 0;
+}
+blockquote[min-width~="630px"] {
+  padding: 0 0 0 75px;
+}
+blockquote:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  width: 100%;
+  border-bottom: 2px solid #E56716;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"44.8"%20height%3D"43.6"%20viewBox%3D"-277.8%20375%2044.8%2043.6"%20enable-background%3D"new%20-277.8%20375%2044.8%2043.6"><path%20fill%3D"%23E56716"%20d%3D"M-232.9%20375v22.5c0%2014-5.1%2021-15.4%2021-1.1%200-2.9-.1-5.2-.2v-8.7c7.1%200%2010.6-3.3%2010.6-9.8l-.1-4h-7.4V375h17.5zm-42.6%2020.8h7.4l.1%204c0%206.2-3.2%209.5-9.7%209.8v8.7c2%20.1%203.5.2%204.3.2%2010.3%200%2015.4-7%2015.4-21V375h-17.4l-.1%2020.8z"%2F><%2Fsvg>');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+blockquote[min-width~="630px"]:before {
+  width: 65px;
+  height: auto;
+  right: auto;
+  bottom: 0;
+  border-bottom: none;
+  border-right: 2px solid #E56716;
+}
+blockquote p {
+  margin: 0;
+  max-width: 100%;
+}
