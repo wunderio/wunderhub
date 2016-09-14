@@ -1,0 +1,19 @@
+uuid: a8d0bdb4-0551-43ef-879d-0f9c93ca0a75
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.field_instagram_account
+field_name: field_instagram_account
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

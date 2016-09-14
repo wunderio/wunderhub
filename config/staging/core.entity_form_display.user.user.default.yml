@@ -3,10 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_background_image
     - field.field.user.user.field_biography
     - field.field.user.user.field_drupal_org_profile
+    - field.field.user.user.field_facebook_account
     - field.field.user.user.field_github
+    - field.field.user.user.field_instagram_account
     - field.field.user.user.field_linkedin
+    - field.field.user.user.field_login_mail
     - field.field.user.user.field_person_email
     - field.field.user.user.field_person_jobtitle
     - field.field.user.user.field_person_namefirst
@@ -15,13 +19,21 @@ dependencies:
     - field.field.user.user.field_person_skills
     - field.field.user.user.field_person_status
     - field.field.user.user.field_persongender
+    - field.field.user.user.field_picture_hover
+    - field.field.user.user.field_telephone
     - field.field.user.user.field_twitter
+    - field.field.user.user.field_user_weight
+    - field.field.user.user.field_video_background
+    - field.field.user.user.field_xing_account
     - field.field.user.user.user_picture
+    - image.style.medium
   module:
     - field_group
+    - file
     - image
     - link
     - paragraphs
+    - telephone
     - text
     - user
 third_party_settings:
@@ -54,6 +66,13 @@ content:
     weight: 9
     settings: {  }
     third_party_settings: {  }
+  field_background_image:
+    weight: 21
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_biography:
     weight: 11
     settings:
@@ -68,8 +87,22 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+  field_facebook_account:
+    weight: 22
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   field_github:
     weight: 15
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_instagram_account:
+    weight: 23
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -82,10 +115,18 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+  field_login_mail:
+    weight: 20
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_person_email:
     weight: 6
     settings:
       placeholder: ''
+      size: 60
     third_party_settings: {  }
     type: email_default
   field_person_jobtitle:
@@ -132,8 +173,40 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+  field_picture_hover:
+    weight: 24
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_telephone:
+    weight: 25
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
   field_twitter:
     weight: 16
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_user_weight:
+    weight: 27
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_video_background:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_xing_account:
+    weight: 28
     settings:
       placeholder_url: ''
       placeholder_title: ''

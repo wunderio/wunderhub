@@ -1,16 +1,16 @@
-uuid: 67dced12-4aba-49d3-939b-c3102d1c324a
+uuid: 9de1d31f-d621-4dab-a083-3724954d5389
 langcode: en
 status: true
 dependencies:
   module:
-    - taxonomy
     - user
-id: user.field_person_jobtitle
-field_name: field_person_jobtitle
+id: user.field_user_weight
+field_name: field_user_weight
 entity_type: user
-type: entity_reference
+type: decimal
 settings:
-  target_type: taxonomy_term
+  precision: 10
+  scale: 2
 module: core
 locked: false
 cardinality: 1

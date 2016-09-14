@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/*
+ * Implements hook_form_FORM_ID_alter
+ */
+function wkhub_person_form_user_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+/* Hide field_login_mail from form. This field is used to allow use user mail values
+ * under api/team, because by default mail value isn't visible for anonymous users.
+ */
+  $form['field_login_mail']['#access'] = FALSE;
+  //get all users
+  $users = \Drupal::entityQuery('user')->execute();
+  $users = \Drupal\user\Entity\User::loadMultiple($users);
+  //setting email for each user and saving it.
+  foreach ($users as $user) {
+    $user_mail = $user->get('mail')->value;
+    $user->set('field_login_mail', $user_mail);
+    $user->save();
+  }
+}

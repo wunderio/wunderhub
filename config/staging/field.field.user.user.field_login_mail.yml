@@ -1,0 +1,22 @@
+uuid: 8846cc7a-e3c0-4461-be7b-f16feb3e4ed6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_login_mail
+  module:
+    - user
+id: user.user.field_login_mail
+field_name: field_login_mail
+entity_type: user
+bundle: user
+label: 'Login mail'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: e-mail@wunderkraut.com
+default_value_callback: ''
+settings: {  }
+field_type: string
