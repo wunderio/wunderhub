@@ -26,8 +26,8 @@
     "require": {
         "composer/installers": "^1.0.20",
         "cweagans/composer-patches": "~1.0",
-        "drupal/core": "8.0.*",
-        "drush/drush": "dev-master",
+        "drupal/core": "8.1.9",
+        "drush/drush": "8.*",
         "drupal/console": "~0.10",
         "drupal/image_raw_formatter": "dev-master",
         "drupal/field_group": "8.1.0-rc4",

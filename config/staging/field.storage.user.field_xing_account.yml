@@ -1,0 +1,19 @@
+uuid: 33888127-b986-4515-b0d4-3b9bf0ab807c
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.field_xing_account
+field_name: field_xing_account
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

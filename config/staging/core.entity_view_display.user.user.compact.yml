@@ -13,9 +13,12 @@ dependencies:
     - field.field.user.user.field_person_namefirst
     - field.field.user.user.field_person_namelast
     - field.field.user.user.field_person_office
+    - field.field.user.user.field_person_skills
+    - field.field.user.user.field_person_status
     - field.field.user.user.field_persongender
     - field.field.user.user.field_twitter
     - field.field.user.user.user_picture
+    - image.style.thumbnail
   module:
     - image
     - user
@@ -42,6 +45,8 @@ hidden:
   field_person_namefirst: true
   field_person_namelast: true
   field_person_office: true
+  field_person_skills: true
+  field_person_status: true
   field_persongender: true
   field_twitter: true
   member_for: true

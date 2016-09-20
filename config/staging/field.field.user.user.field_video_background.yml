@@ -1,0 +1,27 @@
+uuid: e845386a-fcea-4885-a452-6b392b205f71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_video_background
+  module:
+    - file
+    - user
+id: user.user.field_video_background
+field_name: field_video_background
+entity_type: user
+bundle: user
+label: 'Video background'
+description: "First field is for <b>.mp4</b>, Second field for <b>.webm</b>. Upload a <b>background image</b> above for fallback in devices and overlay for video buffering.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'mp4 webm'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
