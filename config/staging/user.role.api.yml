@@ -1,0 +1,16 @@
+uuid: b7f5c359-05a0-4b55-a8e1-a1c53ec91030
+langcode: en
+status: true
+dependencies: {  }
+id: api
+label: API
+weight: -6
+is_admin: null
+permissions:
+  3: 'access own consumers'
+  9: 'view all revisions'
+  10: 'view own unpublished content'
+  11: 'access content'
+  13: 'restful patch entity:user'
+  16: 'restful get entity:node'
+  17: 'restful get entity:user'

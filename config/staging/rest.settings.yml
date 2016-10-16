@@ -5,21 +5,25 @@ resources:
         - hal_json
       supported_auth:
         - basic_auth
+        - oauth
     POST:
       supported_formats:
         - hal_json
       supported_auth:
         - basic_auth
-    PATCH:
-      supported_formats:
-        - hal_json
-      supported_auth:
-        - basic_auth
+        - oauth
     DELETE:
       supported_formats:
         - hal_json
       supported_auth:
         - basic_auth
+        - oauth
+    PATCH:
+      supported_formats:
+        - hal_json
+      supported_auth:
+        - basic_auth
+        - oauth
   menutree:
     GET:
       supported_formats:
@@ -27,4 +31,15 @@ resources:
         - json
       supported_auth:
         - cookie
+  'entity:user':
+    GET:
+      supported_formats:
+        - json
+      supported_auth:
+        - oauth
+    PATCH:
+      supported_formats:
+        - json
+      supported_auth:
+        - oauth
 link_domain: null
